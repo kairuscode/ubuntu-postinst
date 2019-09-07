@@ -146,6 +146,13 @@ cd gestures;sudo python3 setup.py install;cd ..
 sudo sed -i 's/org.cunidev.gestures/libinput-gestures/g' /usr/share/applications/org.cunidev.gestures.desktop
 sudo mv -v /usr/share/applications/libinput-gestures.desktop /etc/xdg/autostart/
 ```
+### GSConnect
+```bash
+wget -c https://github.com/andyholmes/gnome-shell-extension-gsconnect/releases/download/v24/gsconnect@andyholmes.github.io.zip #update_link
+mkdir -pv ~/.local/share/gnome-shell/extensions
+rm -rfv ~/.local/share/gnome-shell/extensions/gsconnect@andyholmes.github.io
+unzip -o gsconnect@andyholmes.github.io.zip -d ~/.local/share/gnome-shell/extensions/gsconnect@andyholmes.github.io
+```
 ### Flatpak
 ```bash
 sudo apt install -y gnome-software-plugin-flatpak;
