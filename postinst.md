@@ -5,7 +5,7 @@ sudo apt update;sudo apt dist-upgrade -y;
 sudo apt install -y deborphan;
 deborphan | xargs sudo apt autoremove --purge -y;
 ```
-### Kernel Liquorix (opcional)
+### Kernel Liquorix
 ```bash
 sudo apt autoremove --purge -y linux*generic*;
 sudo add-apt-repository -y ppa:damentz/liquorix
@@ -40,7 +40,7 @@ vm.dirty_background_bytes=16777216
 vm.dirty_bytes=50331648
 kernel.pid_max=4194304' | sudo tee /etc/sysctl.d/rauldipeas.conf
 ```
-### Plymouth (opcional)
+### Plymouth
 ```bash
 sudo sed -i 's/Window.SetBackgroundTopColor (0.16, 0.00, 0.12);     # Nice colour on top of the screen fading to/Window.SetBackgroundTopColor (0.00, 0.00, 0.00);     # Nice colour on top of the screen fading to/g' /usr/share/plymouth/themes/ubuntu-logo/ubuntu-logo.script
 sudo sed -i 's/Window.SetBackgroundBottomColor (0.16, 0.00, 0.12);  # an equally nice colour on the bottom/Window.SetBackgroundBottomColor (0.00, 0.00, 0.00);  # an equally nice colour on the bottom/g' /usr/share/plymouth/themes/ubuntu-logo/ubuntu-logo.script
@@ -57,13 +57,13 @@ echo 'FRAMEBUFFER=y' | sudo tee /etc/initramfs-tools/conf.d/splash
 sudo update-initramfs -u -k all
 sudo update-grub
 ```
-### GDM (opcional)
+### GDM
 ```bash
 #wget -c https:// #LINK_DO_TEMA
 #sed -i 's/2c001e/000000/g' ubuntu.css;sudo cp ubuntu.css /usr/share/gnome-shell/theme/ubuntu.css
 sudo sed -i 's/2c001e/000000/g' /usr/share/gnome-shell/theme/ubuntu.css
 ```
-### GNOME Shell Extensions (opcional)
+### GNOME Shell Extensions
 ```bash
 sudo apt install -y build-essential gir1.2-gtkclutter-1.0 git gnome-shell-extensions;
 # Blyr
@@ -73,7 +73,7 @@ cd gnome-shell-extension-blyr/;make local-install;cd ..
 git clone https://github.com/home-sweet-gnome/dash-to-panel.git
 cd dash-to-panel;make install;cd ..
 ```
-### WINE (opcional)
+### WINE
 ```bash
 echo "deb https://download.opensuse.org/repositories/Emulators:/Wine:/Debian/xUbuntu_18.04 ./" | sudo tee /etc/apt/sources.list.d/wine-obs.list
 wget -O- -q https://download.opensuse.org/repositories/Emulators:/Wine:/Debian/xUbuntu_18.04/Release.key | sudo apt-key add -
@@ -82,7 +82,7 @@ wget -O- -q https://download.opensuse.org/repositories/Emulators:/Wine:/Debian/x
 #sudo apt install -y ./libfaudio0*.deb
 sudo apt update;sudo apt install -y winehq-staging winetricks q4wine;
 ```
-## Aplicativos de criação de conteúdo multimídia (opcional)
+## Aplicativos de criação de conteúdo multimídia
  - ### Ubuntu Studio Apps
 ```bash
 sudo usermod -aG audio $USER
@@ -160,28 +160,28 @@ echo 'StartupWMClass=resolve' | sudo tee -a /usr/share/applications/com.blackmag
 sudo rm -rfv /usr/share/applications/com.blackmagicdesign.resolve-*.desktop
 ```
 
-### Gerenciadores de jogos (opcional)
+### Gerenciadores de jogos
 ```bash
 sudo add-apt-repository -y ppa:lutris-team/lutris
 sudo apt install -y libvulkan1:i386 lutris steam-installer xboxdrv;
 ```
-### Atom (opcional)
+### Atom
 ```bash
 sudo sh -c 'echo "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main" > /etc/apt/sources.list.d/atom.list'
 curl -L https://packagecloud.io/AtomEditor/atom/gpgkey | sudo apt-key add -
 sudo apt update;sudo apt install -y atom;
 ```
-### Diodon (opcional)
+### Diodon
 ```bash
 sudo apt install -y diodon;
 ```
-### FreeOffice (opcional)
+### FreeOffice
 ```bash
 wget -c https://www.softmaker.net/down/softmaker-freeoffice-2018_970-01_amd64.deb #update-link
 sudo apt install -y ./softmaker-freeoffice*.deb;
 sudo /usr/share/freeoffice2018/add_apt_repo.sh;sudo apt update
 ```
-### Rambox (opcional)
+### Rambox
 ```bash
 wget -c https://github.com/ramboxapp/community-edition/releases/download/0.6.9/Rambox-0.6.9-linux-amd64.deb #update_link
 sudo apt install -y ./Rambox*.deb;
