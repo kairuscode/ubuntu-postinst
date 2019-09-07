@@ -30,6 +30,7 @@ gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type not
 gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-type  nothing
 gsettings set org.gnome.shell enabled-extensions "['user-theme@gnome-shell-extensions.gcampax.github.com', 'blyr@yozoon.dev.gmail.com', 'dash-to-panel@jderose9.github.com']"
 gsettings set org.gnome.shell favorite-apps "['org.gnome.Nautilus.desktop', 'firefox.desktop', 'org.gnome.FeedReader.desktop', 'rambox.desktop', 'org.kde.kpat.desktop', 'steam.desktop', 'net.lutris.Lutris.desktop', 'ubuntustudio-controls.desktop', 'ToneLib-Zoom.desktop', 'carla.desktop', 'cockos-reaper.desktop', 'com.blackmagicdesign.resolve.desktop', 'gimp.desktop']"
+gsettings set org.gtk.Settings.FileChooser sort-directories-first true
 ```
 ### GRUB
 ```bash
