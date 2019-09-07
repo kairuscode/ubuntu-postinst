@@ -1,1 +1,1 @@
-![screenshot](https://raw.githubusercontent.com/rauldipeas/ubuntu-postinst/master/screenshot.png)
+![screenshot](https://github.com/rauldipeas/ubuntu-postinst/raw/master/screenshot.png)
