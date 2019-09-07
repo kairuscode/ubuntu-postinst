@@ -115,7 +115,7 @@ sudo chmod +x -v /usr/local/bin/speedtest-cli
 ```
 ### VirtualBox
 ```bash
-wget -c https://download.virtualbox.org/virtualbox/6.0.10/virtualbox-6.0_6.0.10-132072~Ubuntu~bionic_amd64.deb
+wget -c https://download.virtualbox.org/virtualbox/6.0.12/virtualbox-6.0_6.0.12-133076~Ubuntu~bionic_amd64.deb
 sudo apt install -y --no-install-recommends ./virtualbox*.deb;
 ```
 ### APT Apps
