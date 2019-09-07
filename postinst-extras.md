@@ -118,6 +118,13 @@ sudo chmod +x -v /usr/local/bin/speedtest-cli
 wget -c https://download.virtualbox.org/virtualbox/6.0.12/virtualbox-6.0_6.0.12-133076~Ubuntu~bionic_amd64.deb
 sudo apt install -y --no-install-recommends ./virtualbox*.deb;
 ```
+### Webpin
+```bash
+wget -c https://launchpadlibrarian.net/440481065/libgranite-common_5.2.5+r1436+pkg110~ubuntu5.0.1_all.deb
+wget -c https://launchpadlibrarian.net/440481067/libgranite5_5.2.5+r1436+pkg110~ubuntu5.0.1_amd64.deb
+wget -c https:// #LINK_DO_WEBPIN
+sudo apt install -y ./libgranite* ./com.github.artemanufrij.webpin*.deb;
+```
 ### APT Apps
 ```bash
 sudo add-apt-repository -yn ppa:mc3man/bionic-media # Media codecs
