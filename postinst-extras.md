@@ -10,7 +10,6 @@ sudo apt install -y breeze-cursor-theme folder-color fonts-emojione fonts-powerl
 wget -c http://ftp.us.debian.org/debian/pool/main/f/fonts-quicksand/fonts-quicksand_0.2016-2_all.deb #update_link
 sudo apt install -y ./fonts-quicksand*.deb;
 sudo sed -i 's/Roboto/Quicksand/g' /usr/share/themes/Materia*/gnome-shell/gnome-shell.css
-sudo hardcode-tray --apply
 sudo sed -i 's/Icon=\/opt\/resolve\/graphics\/DV_Resolve.png/Icon=resolve/g' /usr/share/applications/com.blackmagicdesign.resolve.desktop
 gsettings set org.gnome.desktop.interface font-name 'Quicksand Regular 11'
 gsettings set org.gnome.desktop.interface gtk-theme Materia-dark-compact
@@ -123,11 +122,12 @@ sudo apt install -y --no-install-recommends ./virtualbox*.deb;
 ```bash
 sudo add-apt-repository -yn ppa:mc3man/bionic-media # Media codecs
 sudo add-apt-repository -yn ppa:xuzhen666/gnome-mpv # Celluloid
-sudo add-apt-repository -y ppa:mkusb/ppa # MKUSB
+sudo add-apt-repository -yn ppa:mkusb/ppa # MKUSB
+sudo add-apt-repository -y ppa:atareao/telegram
 sudo apt install -y --no-install-recommends gnome-mpv kpat mkusb;
 gsettings set io.github.celluloid-player.Celluloid mpv-options --save-position-on-quit
 echo 'StartupWMClass=kpat' | sudo tee -a /usr/share/applications/org.kde.kpat.desktop
-sudo apt install -y caffeine deluge-gtk deluge-web deluged galculator gnome-alsamixer gnome-sushi gnome-usage hardinfo neofetch synaptic tilix;
+sudo apt install -y caffeine deluge-gtk deluge-web deluged galculator gnome-alsamixer gnome-sushi gnome-usage hardinfo neofetch synaptic telegram tilix;
 sudo rm -rfv /usr/share/applications/caffeine.desktop /usr/share/applications/debian-*xterm.desktop /usr/share/applications/guidus.desktop
 sudo sed -i 's/Icon=\/usr\/share\/pixmaps\/gnome-alsamixer\/gnome-alsamixer-icon.png/Icon=gnome-alsamixer-icon/g' /usr/share/applications/gnome-alsamixer.desktop
 sudo sed -i 's/Icon=\/usr\/share\/pixmaps\/guvcview\/guvcview.png/Icon=guvcview/g' 2/usr/share/applications/guvcview.desktop
@@ -160,4 +160,8 @@ flatpak install flathub org.gnome.FeedReader
 ```bash
 sudo snap remove gnome-3-28-1804 gnome-calculator gnome-characters gnome-logs gnome-system-monitor gtk-common-themes
 sudo snap remove core18
+```
+### Hardcode-tray apply
+```bash
+sudo hardcode-tray --apply
 ```
