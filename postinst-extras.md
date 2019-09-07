@@ -130,11 +130,11 @@ sudo apt install -y ./libgranite* ./com.github.artemanufrij.webpin*.deb;
 sudo add-apt-repository -yn ppa:mc3man/bionic-media # Media codecs
 sudo add-apt-repository -yn ppa:xuzhen666/gnome-mpv # Celluloid
 sudo add-apt-repository -yn ppa:mkusb/ppa # MKUSB
-sudo add-apt-repository -y ppa:atareao/telegram
+#sudo add-apt-repository -y ppa:atareao/telegram
 sudo apt install -y --no-install-recommends gnome-mpv kpat mkusb;
 gsettings set io.github.celluloid-player.Celluloid mpv-options --save-position-on-quit
 echo 'StartupWMClass=kpat' | sudo tee -a /usr/share/applications/org.kde.kpat.desktop
-sudo apt install -y caffeine deluge-gtk deluge-web deluged galculator gnome-alsamixer gnome-sushi gnome-usage hardinfo neofetch synaptic telegram tilix;
+sudo apt install -y caffeine deluge-gtk deluge-web deluged galculator gnome-alsamixer gnome-sushi gnome-usage hardinfo neofetch synaptic tilix; #telegram
 sudo rm -rfv /usr/share/applications/caffeine.desktop /usr/share/applications/debian-*xterm.desktop /usr/share/applications/guidus.desktop
 sudo sed -i 's/Icon=\/usr\/share\/pixmaps\/gnome-alsamixer\/gnome-alsamixer-icon.png/Icon=gnome-alsamixer-icon/g' /usr/share/applications/gnome-alsamixer.desktop
 sudo sed -i 's/Icon=\/usr\/share\/pixmaps\/guvcview\/guvcview.png/Icon=guvcview/g' 2/usr/share/applications/guvcview.desktop
