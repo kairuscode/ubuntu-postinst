@@ -12,7 +12,7 @@ sudo apt install -y ./fonts-quicksand*.deb;
 sudo sed -i 's/Roboto/Quicksand/g' /usr/share/themes/Materia*/gnome-shell/gnome-shell.css
 sudo sed -i 's/Icon=\/opt\/resolve\/graphics\/DV_Resolve.png/Icon=resolve/g' /usr/share/applications/com.blackmagicdesign.resolve.desktop
 sudo sed -i 's/ubuntu-dock@ubuntu.com//g' /usr/share/gnome-shell/modes/ubuntu.json
-sudo sed -i 's/ubuntu-appindicators@ubuntu.com//g' /usr/share/gnome-shell/modes/ubuntu.json
+#sudo sed -i 's/ubuntu-appindicators@ubuntu.com//g' /usr/share/gnome-shell/modes/ubuntu.json
 gsettings set org.gnome.desktop.interface font-name 'Quicksand Regular 11'
 gsettings set org.gnome.desktop.interface gtk-theme Materia-dark-compact
 gsettings set org.gnome.desktop.interface icon-theme Papirus-Dark
