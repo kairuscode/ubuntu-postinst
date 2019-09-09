@@ -173,5 +173,5 @@ sudo snap remove core18
 ```
 ### Hardcode-tray apply
 ```bash
-sudo hardcode-tray --apply
+sudo hardcode-tray --apply --size 24
 ```
