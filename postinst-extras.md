@@ -11,6 +11,8 @@ wget -c http://ftp.us.debian.org/debian/pool/main/f/fonts-quicksand/fonts-quicks
 sudo apt install -y ./fonts-quicksand*.deb;
 sudo sed -i 's/Roboto/Quicksand/g' /usr/share/themes/Materia*/gnome-shell/gnome-shell.css
 sudo sed -i 's/Icon=\/opt\/resolve\/graphics\/DV_Resolve.png/Icon=resolve/g' /usr/share/applications/com.blackmagicdesign.resolve.desktop
+sudo sed -i 's/ubuntu-dock@ubuntu.com//g' /usr/share/gnome-shell/modes/ubuntu.json
+sudo sed -i 's/ubuntu-appindicators@ubuntu.com//g' /usr/share/gnome-shell/modes/ubuntu.json
 gsettings set org.gnome.desktop.interface font-name 'Quicksand Regular 11'
 gsettings set org.gnome.desktop.interface gtk-theme Materia-dark-compact
 gsettings set org.gnome.desktop.interface icon-theme Papirus-Dark
@@ -153,13 +155,6 @@ git clone https://gitlab.com/cunidev/gestures
 cd gestures;sudo python3 setup.py install;cd ..
 sudo sed -i 's/org.cunidev.gestures/libinput-gestures/g' /usr/share/applications/org.cunidev.gestures.desktop
 sudo mv -v /usr/share/applications/libinput-gestures.desktop /etc/xdg/autostart/
-```
-### GSConnect
-```bash
-wget -c https://github.com/andyholmes/gnome-shell-extension-gsconnect/releases/download/v24/gsconnect@andyholmes.github.io.zip #update_link
-mkdir -pv ~/.local/share/gnome-shell/extensions
-rm -rfv ~/.local/share/gnome-shell/extensions/gsconnect@andyholmes.github.io
-unzip -o gsconnect@andyholmes.github.io.zip -d ~/.local/share/gnome-shell/extensions/gsconnect@andyholmes.github.io
 ```
 ### Flatpak
 ```bash
