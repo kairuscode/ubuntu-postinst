@@ -20,6 +20,10 @@ gsettings set org.gnome.desktop.interface cursor-theme Breeze_Snow
 gsettings set org.gnome.desktop.wm.preferences titlebar-font 'Quicksand Bold 11'
 gsettings set org.gnome.shell.extensions.user-theme name Materia-dark-compact
 gsettings set org.gnome.desktop.interface clock-show-date true
+gsettings set org.gnome.desktop.screensaver picture-options wallpaper
+gsettings set org.gnome.desktop.screensaver picture-uri 'file:////usr/share/gnome-control-center/pixmaps/noise-texture-light.png'
+gsettings set org.gnome.desktop.screensaver primary-color '#000000'
+gsettings set org.gnome.desktop.screensaver secondary-color '#000000'
 gsettings set org.gnome.gedit.preferences.editor display-line-numbers true
 gsettings set org.gnome.nautilus.desktop trash-icon-visible false
 gsettings set org.gnome.nautilus.desktop volumes-visible false
@@ -142,6 +146,7 @@ sudo apt install -y --no-install-recommends gnome-mpv kpat mkusb
 gsettings set io.github.celluloid-player.Celluloid mpv-options --save-position-on-quit
 echo 'StartupWMClass=kpat' | sudo tee -a /usr/share/applications/org.kde.kpat.desktop
 sudo apt install -y caffeine deluge-gtk deluge-web deluged galculator gnome-alsamixer gnome-sushi gnome-usage hardinfo neofetch synaptic tilix #telegram
+sudo apt autoremove --purge -y gnome-terminal
 sudo rm -rfv /usr/share/applications/caffeine.desktop /usr/share/applications/debian-*xterm.desktop /usr/share/applications/guidus.desktop
 sudo sed -i 's/Icon=\/usr\/share\/pixmaps\/gnome-alsamixer\/gnome-alsamixer-icon.png/Icon=gnome-alsamixer-icon/g' /usr/share/applications/gnome-alsamixer.desktop
 sudo sed -i 's/Icon=\/usr\/share\/pixmaps\/guvcview\/guvcview.png/Icon=guvcview/g' 2/usr/share/applications/guvcview.desktop
