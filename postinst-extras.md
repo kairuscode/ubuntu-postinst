@@ -136,7 +136,7 @@ sudo apt install -y ./libgranite* ./com.github.artemanufrij.webpin*.deb
 ```bash
 sudo add-apt-repository -yn ppa:mc3man/bionic-media # Media codecs
 sudo add-apt-repository -yn ppa:xuzhen666/gnome-mpv # Celluloid
-sudo add-apt-repository -yn ppa:mkusb/ppa # MKUSB
+sudo add-apt-repository -y ppa:mkusb/ppa # MKUSB
 #sudo add-apt-repository -y ppa:atareao/telegram
 sudo apt install -y --no-install-recommends gnome-mpv kpat mkusb
 gsettings set io.github.celluloid-player.Celluloid mpv-options --save-position-on-quit
