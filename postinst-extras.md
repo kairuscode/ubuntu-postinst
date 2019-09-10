@@ -48,6 +48,7 @@ $# gsettings set org.gnome.desktop.interface gtk-theme Materia-dark-compact
 $# gsettings set org.gnome.desktop.interface icon-theme Papirus-Dark
 $# gsettings set org.gnome.desktop.interface cursor-theme Breeze_Snow
 $# exit
+xhost -SI:localuser:gdm
 ```
 ### Terminal
 ```bash
