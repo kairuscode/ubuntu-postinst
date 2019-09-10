@@ -59,8 +59,6 @@ sudo update-grub
 ```
 ### GDM
 ```bash
-#wget -c https:// #LINK_DO_TEMA
-#sed -i 's/2c001e/000000/g' ubuntu.css;sudo cp ubuntu.css /usr/share/gnome-shell/theme/ubuntu.css
 sudo sed -i 's/2c001e/000000/g' /usr/share/gnome-shell/theme/ubuntu.css
 ```
 ### GNOME Shell Extensions
