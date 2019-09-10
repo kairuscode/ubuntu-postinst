@@ -26,7 +26,7 @@ gsettings set org.gnome.nautilus.desktop volumes-visible false
 gsettings set org.gnome.nautilus.icon-view default-zoom-level standard
 gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true
 gsettings set org.gnome.settings-daemon.plugins.color night-light-schedule-automatic true
-gsettings set org.gnome.settings-daemon.plugins.color night-light-temperature uint32 5000
+gsettings set org.gnome.settings-daemon.plugins.color night-light-temperature 'uint32 5000'
 gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-timeout 3600
 gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type nothing
 gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-type  nothing
