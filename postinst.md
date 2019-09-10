@@ -90,7 +90,7 @@ sudo apt update;sudo apt install -y winehq-staging winetricks q4wine
 sudo usermod -aG audio $USER
 sudo usermod -aG video $USER
 echo jackd2 jackd/tweak_rt_limits string true | sudo debconf-set-selections
-sudo add-apt-repository ppa:ubuntustudio-ppa/backports
+sudo add-apt-repository -y ppa:ubuntustudio-ppa/backports
 sudo apt install -y --no-install-recommends ubuntustudio-controls patchage
 sudo apt install -y carla
 ```
