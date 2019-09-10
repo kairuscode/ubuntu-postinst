@@ -52,6 +52,7 @@ sudo su gdm -s /bin/bash #executar comandos abaixo como usuário GDM
 $# gsettings set org.gnome.desktop.interface gtk-theme Materia-dark-compact
 $# gsettings set org.gnome.desktop.interface icon-theme Papirus-Dark
 $# gsettings set org.gnome.desktop.interface cursor-theme Breeze_Snow
+$# gsettings set org.gnome.login-screen logo '/usr/share/plymouth/themes/ubuntu-logo/ubuntu-logo.png'
 $# exit
 xhost -SI:localuser:gdm
 ```
