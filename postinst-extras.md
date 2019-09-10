@@ -6,9 +6,9 @@ sudo add-apt-repository -yn ppa:dyatlov-igor/materia-theme
 sudo add-apt-repository -yn ppa:papirus/papirus
 sudo add-apt-repository -yn ppa:papirus/papirus-dev
 sudo add-apt-repository -y ppa:papirus/hardcode-tray
-sudo apt install -y breeze-cursor-theme folder-color fonts-emojione fonts-powerline gnome-tweaks hardcode-tray materia-gtk-theme materia-kde papirus-icon-theme qt5ct;
+sudo apt install -y breeze-cursor-theme folder-color fonts-emojione fonts-powerline gnome-tweaks hardcode-tray materia-gtk-theme materia-kde papirus-icon-theme qt5ct
 wget -c http://ftp.us.debian.org/debian/pool/main/f/fonts-quicksand/fonts-quicksand_0.2016-2_all.deb #update_link
-sudo apt install -y ./fonts-quicksand*.deb;
+sudo apt install -y ./fonts-quicksand*.deb
 sudo sed -i 's/Roboto/Quicksand/g' /usr/share/themes/Materia*/gnome-shell/gnome-shell.css
 sudo sed -i 's/Icon=\/opt\/resolve\/graphics\/DV_Resolve.png/Icon=resolve/g' /usr/share/applications/com.blackmagicdesign.resolve.desktop
 sudo sed -i 's/ubuntu-dock@ubuntu.com//g' /usr/share/gnome-shell/modes/ubuntu.json
@@ -50,7 +50,7 @@ $# gsettings set org.gnome.desktop.interface cursor-theme Breeze_Snow
 ```
 ### Terminal
 ```bash
-sudo apt install -y fish undistract-me;
+sudo apt install -y fish undistract-me
 wget -c https://github.com/hbin/top-programming-fonts/raw/master/Monaco-Linux.ttf
 mkdir -p ~/.fonts;cp -rv Monaco* ~/.fonts
 gsettings set org.gnome.desktop.interface monospace-font-name 'Monaco Regular 11'
@@ -74,44 +74,44 @@ $# exit
 ### AppImage Daemon
 ```bash
 wget -c https://github.com/AppImage/appimaged/releases/download/continuous/appimaged_1-alpha-git05c4438.travis209_amd64.deb #update_link
-sudo apt install -y ./appimaged*.deb;
+sudo apt install -y ./appimaged*.deb
 ```
 ### Crow Translate
 ```bash
 wget -c https://github.com/crow-translate/crow-translate/releases/download/2.2.0/crow-translate-2.2.0-amd64.deb #update_link
-sudo apt install -y ./crow-translate*.deb;
+sudo apt install -y ./crow-translate*.deb
 ```
 ### Etcher
 ```bash
 wget -c https://github.com/balena-io/etcher/releases/download/v1.5.56/balena-etcher-electron_1.5.56_amd64.deb #update_link
-sudo apt install -y ./balena-etcher*.deb;
+sudo apt install -y ./balena-etcher*.deb
 ```
 ### GitHub Desktop
 ```bash
 wget -c https://github.com/shiftkey/desktop/releases/download/release-2.1.0-linux1/GitHubDesktop-linux-2.1.0-linux1.deb #update_link
-sudo apt install -y ./GitHubDesktop-linux*.deb;
+sudo apt install -y ./GitHubDesktop-linux*.deb
 ```
 ### Google Chrome
 ```bash
 wget -c https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo apt install -y ./google-chrome*.deb;
+sudo apt install -y ./google-chrome*.deb
 ```
 ### Insync
 ```bash
 wget -c https://d2t3ff60b2tol4.cloudfront.net/builds/insync-nautilus_3.0.13.40201_all.deb #update_link
 wget -c https://d2t3ff60b2tol4.cloudfront.net/builds/insync_3.0.15.40277-bionic_amd64.deb #update_link
-sudo apt install -y ./insync*.deb;
+sudo apt install -y ./insync*.deb
 ```
 ### MEGA
 ```bash
 wget -c https://mega.nz/linux/MEGAsync/xUbuntu_18.04/amd64/nautilus-megasync-xUbuntu_18.04_amd64.deb
 wget -c https://mega.nz/linux/MEGAsync/xUbuntu_18.04/amd64/megasync-xUbuntu_18.04_amd64.deb
-sudo apt install -y ./nautilus-megasync*.deb ./megasync*.deb;
+sudo apt install -y ./nautilus-megasync*.deb ./megasync*.deb
 ```
 ### OCS URL
 ```bash
-wget -c https:// #LINK_DO_OCS_URL
-sudo apt install -y ./ocs-url*.deb;
+wget -c https://github.com/rauldipeas/ubuntu-postinst/raw/master/ocs-url_3.1.0-0ubuntu1_amd64.deb
+sudo apt install -y ./ocs-url*.deb
 ```
 ## SpeedTest
 ```bash
@@ -121,14 +121,14 @@ sudo chmod +x -v /usr/local/bin/speedtest-cli
 ### VirtualBox
 ```bash
 wget -c https://download.virtualbox.org/virtualbox/6.0.12/virtualbox-6.0_6.0.12-133076~Ubuntu~bionic_amd64.deb
-sudo apt install -y --no-install-recommends ./virtualbox*.deb;
+sudo apt install -y --no-install-recommends ./virtualbox*.deb
 ```
 ### Webpin
 ```bash
 wget -c https://launchpadlibrarian.net/440481065/libgranite-common_5.2.5+r1436+pkg110~ubuntu5.0.1_all.deb
 wget -c https://launchpadlibrarian.net/440481067/libgranite5_5.2.5+r1436+pkg110~ubuntu5.0.1_amd64.deb
-wget -c https:// #LINK_DO_WEBPIN
-sudo apt install -y ./libgranite* ./com.github.artemanufrij.webpin*.deb;
+wget -c https://github.com/rauldipeas/ubuntu-postinst/raw/master/com.github.artemanufrij.webpin_0.2.1_amd64.deb
+sudo apt install -y ./libgranite* ./com.github.artemanufrij.webpin*.deb
 ```
 ### APT Apps
 ```bash
@@ -136,10 +136,10 @@ sudo add-apt-repository -yn ppa:mc3man/bionic-media # Media codecs
 sudo add-apt-repository -yn ppa:xuzhen666/gnome-mpv # Celluloid
 sudo add-apt-repository -yn ppa:mkusb/ppa # MKUSB
 #sudo add-apt-repository -y ppa:atareao/telegram
-sudo apt install -y --no-install-recommends gnome-mpv kpat mkusb;
+sudo apt install -y --no-install-recommends gnome-mpv kpat mkusb
 gsettings set io.github.celluloid-player.Celluloid mpv-options --save-position-on-quit
 echo 'StartupWMClass=kpat' | sudo tee -a /usr/share/applications/org.kde.kpat.desktop
-sudo apt install -y caffeine deluge-gtk deluge-web deluged galculator gnome-alsamixer gnome-sushi gnome-usage hardinfo neofetch synaptic tilix; #telegram
+sudo apt install -y caffeine deluge-gtk deluge-web deluged galculator gnome-alsamixer gnome-sushi gnome-usage hardinfo neofetch synaptic tilix #telegram
 sudo rm -rfv /usr/share/applications/caffeine.desktop /usr/share/applications/debian-*xterm.desktop /usr/share/applications/guidus.desktop
 sudo sed -i 's/Icon=\/usr\/share\/pixmaps\/gnome-alsamixer\/gnome-alsamixer-icon.png/Icon=gnome-alsamixer-icon/g' /usr/share/applications/gnome-alsamixer.desktop
 sudo sed -i 's/Icon=\/usr\/share\/pixmaps\/guvcview\/guvcview.png/Icon=guvcview/g' 2/usr/share/applications/guvcview.desktop
@@ -150,7 +150,7 @@ sudo chmod +x -v /usr/local/bin/neofetch
 ### Gestures
 ```bash
 sudo gpasswd -a $USER input
-sudo apt install -y libinput-tools python3-setuptools wmctrl xdotool;
+sudo apt install -y libinput-tools python3-setuptools wmctrl xdotool
 git clone https://github.com/bulletmark/libinput-gestures.git
 cd libinput-gestures;sudo make install;cd ..
 git clone https://gitlab.com/cunidev/gestures
@@ -160,7 +160,7 @@ sudo mv -v /usr/share/applications/libinput-gestures.desktop /etc/xdg/autostart/
 ```
 ### Flatpak
 ```bash
-sudo apt install -y gnome-software-plugin-flatpak;
+sudo apt install -y gnome-software-plugin-flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 flatpak install flathub org.gtk.Gtk3theme.Materia-dark-compact
 ```
