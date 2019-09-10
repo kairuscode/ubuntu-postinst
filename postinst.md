@@ -59,7 +59,6 @@ sudo update-grub
 ```
 ### GDM
 ```bash
-gsettings set org.gnome.login-screen logo '/usr/share/plymouth/themes/ubuntu-logo/ubuntu-logo.png'
 sudo sed -i 's/2c001e/000000/g' /usr/share/gnome-shell/theme/ubuntu.css
 ```
 ### GNOME Shell Extensions
