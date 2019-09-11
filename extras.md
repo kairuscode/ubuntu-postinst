@@ -185,13 +185,6 @@ sudo snap remove core18
 ```bash
 sudo hardcode-tray --apply --size 24
 ```
-### LightDM
-```bash
-sudo apt install -y --no-install-recommends lightdm lightdm-gtk-greeter
-sudo sed -i 's/#theme-name=/theme-name=Materia-dark-compact/g' /etc/lightdm/lightdm-gtk-greeter.conf
-sudo sed -i 's/#icon-theme-name=/icon-theme-name=Papirus-Dark/g' /etc/lightdm/lightdm-gtk-greeter.conf
-sudo sed -i 's/#font-name=/font-name=Quicksand Regular 10/g' /etc/lightdm/lightdm-gtk-greeter.conf
-```
 ### AutoStart NoDisplay=false
 ```bash
 sudo sed -i 's/NoDisplay=true/NoDisplay=false/g' /etc/xdg/autostart/*.desktop
