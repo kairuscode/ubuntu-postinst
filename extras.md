@@ -104,6 +104,14 @@ sudo apt install -y ./GitHubDesktop-linux*.deb
 wget -c https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install -y ./google-chrome*.deb
 ```
+### GoTop
+```bash
+wget -c https://github.com/cjbassi/gotop/releases/download/3.0.0/gotop_3.0.0_linux_amd64.deb
+sudo apt install -y ./gotop*.deb
+echo "
+# GoTop
+alias gotop-monokai='gotop -c monokai'" >> ~/.bashrc
+```
 ### Insync
 ```bash
 wget -c https://d2t3ff60b2tol4.cloudfront.net/builds/insync-nautilus_3.0.13.40201_all.deb #update_link
