@@ -188,4 +188,20 @@ sudo hardcode-tray --apply --size 24
 ### AutoStart NoDisplay=false
 ```bash
 sudo sed -i 's/NoDisplay=true/NoDisplay=false/g' /etc/xdg/autostart/*.desktop
+mkdir -p ~/.config/autostart
+cp /etc/xdg/autostart/at-spi-dbus-bus.desktop ~/.config/autostart #acessibilidade
+cp /etc/xdg/autostart/caffeine.desktop ~/.config/autostart #tela_sempre_ativa
+cp /etc/xdg/autostart/gnome-software-service.desktop ~/.config/autostart #central_de_programas
+cp /etc/xdg/autostart/gnome-welcome-tour.desktop ~/.config/autostart #tela_de_boas_vindas
+cp /etc/xdg/autostart/orca-autostart.desktop ~/.config/autostart #leitor_de_tela
+cp /etc/xdg/autostart/org.gnome.SettingsDaemon.A11ySettings.desktop ~/.config/autostart #acessibilidade
+cp /etc/xdg/autostart/org.gnome.SettingsDaemon.Clipboard.desktop ~/.config/autostart #área_de_transferência
+cp /etc/xdg/autostart/org.gnome.SettingsDaemon.PrintNotifications.desktop ~/.config/autostart #impressoras
+cp /etc/xdg/autostart/org.gnome.SettingsDaemon.Sharing.desktop ~/.config/autostart #compartilhamento
+cp /etc/xdg/autostart/org.gnome.SettingsDaemon.Smartcard.desktop ~/.config/autostart #cartões_inteligentes
+cp /etc/xdg/autostart/org.gnome.SettingsDaemon.Wacom.desktop ~/.config/autostart #superfície_de_controle
+cp /etc/xdg/autostart/snap-userd-autostart.desktop ~/.config/autostart #snap
+cp /etc/xdg/autostart/spice-vdagent.desktop ~/.config/autostart #acesso_remoto
+cp /etc/xdg/autostart/update-notifier.desktop ~/.config/autostart #atualizador_de_programas
+echo X-GNOME-Autostart-enabled=false | tee -a ~/.config/autostart/*.desktop
 ```
