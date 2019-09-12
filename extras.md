@@ -192,7 +192,7 @@ sudo snap remove core18
 ```
 ### Hardcode-tray apply
 ```bash
-sudo hardcode-tray --apply --size 24
+sudo hardcode-tray --apply
 ```
 ### AutoStart NoDisplay=false
 ```bash
