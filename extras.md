@@ -58,7 +58,7 @@ xhost -SI:localuser:gdm
 ```
 ### Terminal
 ```bash
-sudo apt install -y fish undistract-me
+sudo apt install -y curl fish undistract-me
 wget -c https://github.com/hbin/top-programming-fonts/raw/master/Monaco-Linux.ttf
 mkdir -p ~/.fonts;cp -rv Monaco* ~/.fonts
 gsettings set org.gnome.desktop.interface monospace-font-name 'Monaco Regular 11'
