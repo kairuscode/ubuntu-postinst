@@ -156,11 +156,13 @@ sudo add-apt-repository -y ppa:mkusb/ppa # MKUSB
 sudo apt install -y --no-install-recommends gnome-mpv kpat mkusb
 gsettings set io.github.celluloid-player.Celluloid mpv-options --save-position-on-quit
 echo 'StartupWMClass=kpat' | sudo tee -a /usr/share/applications/org.kde.kpat.desktop
-sudo apt install -y audacity caffeine deluge-gtk deluge-web deluged galculator gnome-alsamixer gnome-sushi gnome-usage hardinfo neofetch openssh-server synaptic tilix vinagre x11vnc #telegram
+sudo apt install -y audacity caffeine deluge-gtk deluge-web deluged galculator gnome-alsamixer gnome-sushi gnome-usage hardinfo neofetch openssh-server synaptic tilix unrar vinagre x11vnc #telegram
 sudo apt autoremove --purge -y gnome-terminal
 sudo rm -rfv /usr/share/applications/caffeine.desktop /usr/share/applications/debian-*xterm.desktop /usr/share/applications/guidus.desktop
 sudo sed -i 's/Icon=\/usr\/share\/pixmaps\/gnome-alsamixer\/gnome-alsamixer-icon.png/Icon=gnome-alsamixer-icon/g' /usr/share/applications/gnome-alsamixer.desktop
 sudo sed -i 's/Icon=\/usr\/share\/hardinfo\/pixmaps\/logo.png/Icon=hardinfo/g' /usr/share/applications/hardinfo.desktop
+sudo update-alternatives --set x-cursor-theme /etc/X11/cursors/Breeze_Snow.theme
+sudo update-alternatives --set x-terminal-emulator /usr/bin/tilix.wrapper
 sudo wget -cO /usr/local/bin/neofetch https://raw.githubusercontent.com/dylanaraps/neofetch/master/neofetch
 sudo chmod +x -v /usr/local/bin/neofetch
 ```
