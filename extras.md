@@ -75,6 +75,7 @@ sudo sed -i 's/took/levou/g' /usr/share/undistract-me/long-running.bash
 sudo sed -i 's/dialog-information/xterm/g' /usr/share/undistract-me/long-running.bash
 sudo sed -i 's/Long\ command\ completed/Comando\ concluído\!/g' /usr/share/undistract-me/long-running.bash
 sudo su #executar comandos abaixo como usuário root
+$# chsh -s `which fish`
 $# curl -L https://get.oh-my.fish | fish
 $# omf install bobthefish
 $# exit
