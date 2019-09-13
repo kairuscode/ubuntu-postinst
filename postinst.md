@@ -45,7 +45,7 @@ systemctl --user mask evolution-addressbook-factory.service evolution-calendar-f
 ```bash
 sudo sed -i 's/Window.SetBackgroundTopColor (0.16, 0.00, 0.12);     # Nice colour on top of the screen fading to/Window.SetBackgroundTopColor (0.00, 0.00, 0.00);     # Nice colour on top of the screen fading to/g' /usr/share/plymouth/themes/ubuntu-logo/ubuntu-logo.script
 sudo sed -i 's/Window.SetBackgroundBottomColor (0.16, 0.00, 0.12);  # an equally nice colour on the bottom/Window.SetBackgroundBottomColor (0.00, 0.00, 0.00);  # an equally nice colour on the bottom/g' /usr/share/plymouth/themes/ubuntu-logo/ubuntu-logo.script
-wget -c https://github.com/rauldipeas/ubuntu-postinst/raw/master/ubuntu-logo.png
+wget -c https://github.com/rauldipeas/ubuntu-postinst/raw/master/resources/ubuntu-logo.png
 sudo cp -v ubuntu-logo.png /usr/share/plymouth/themes/ubuntu-logo/ubuntu-logo.png
 ```
 ### GRUB
@@ -155,7 +155,7 @@ sudo apt install -y --no-install-recommends obs-studio;sudo apt install -y guvcv
 ```
  - ### DaVinci Resolve
 ```bash
-wget -c https://github.com/rauldipeas/ubuntu-postinst/raw/master/ffmulticonverter_1.8.0-dmo1-1ubuntu1-rauldipeas_all.deb
+wget -c https://github.com/rauldipeas/ubuntu-postinst/raw/master/resources/ffmulticonverter_1.8.0-dmo1-1ubuntu1-rauldipeas_all.deb
 sudo apt install -y ./ffmulticonverter*rauldipeas*.deb ocl-icd-libopencl1
 wget -c https:// #LINK_DO_DAVINCI_RESOLVE
 unzip DaVinci_Resolve*.zip;./DaVinci_Resolve*Linux.run
