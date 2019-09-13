@@ -84,6 +84,7 @@ $# exit
 ```bash
 wget -c https://github.com/AppImage/appimaged/releases/download/continuous/appimaged_1-alpha-git05c4438.travis209_amd64.deb #update_link
 sudo apt install -y ./appimaged*.deb
+sudo cp -v /usr/share/applications/appimaged.desktop /etc/xdg/autostart/
 ```
 ### Crow Translate
 ```bash
