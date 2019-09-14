@@ -16,8 +16,8 @@ sudo apt install -y linux-headers-liquorix-amd64 linux-image-liquorix-amd64
 sudo apt autoremove --purge -yn *nvidia* *libnvidia*
 #sudo add-apt-repository -y ppa:graphics-drivers/ppa
 sudo add-apt-repository -y ppa:system76/pop
-#echo deb https://packages.lunarg.com/vulkan/1.1.106 bionic main | sudo tee -a /etc/apt/sources.list.d/lunarg-vulkan-1.1.106-bionic.list
-#wget -qO - http://packages.lunarg.com/lunarg-signing-key-pub.asc | sudo apt-key add -
+echo deb https://packages.lunarg.com/vulkan/1.1.106 bionic main | sudo tee -a /etc/apt/sources.list.d/lunarg-vulkan-1.1.106-bionic.list
+wget -qO - http://packages.lunarg.com/lunarg-signing-key-pub.asc | sudo apt-key add -
 echo '# POP!_OS PPA
 Package: *
 Pin: release o=LP-PPA-system76-pop
