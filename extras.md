@@ -131,10 +131,15 @@ sudo apt install -y ./nautilus-megasync*.deb ./megasync*.deb
 wget -c https://github.com/rauldipeas/ubuntu-postinst/raw/master/resources/ocs-url_3.1.0-0ubuntu1_amd64.deb
 sudo apt install -y ./ocs-url*.deb
 ```
-## SpeedTest
+### SpeedTest
 ```bash
 sudo wget -O /usr/local/bin/speedtest-cli https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py
 sudo chmod +x -v /usr/local/bin/speedtest-cli
+```
+### Stacer
+```bash
+wget -c https://github.com/oguzhaninan/Stacer/releases/download/v1.1.0/stacer_1.1.0_amd64.deb
+sudo apt install -y ./stacer*.deb
 ```
 ### VirtualBox
 ```bash
