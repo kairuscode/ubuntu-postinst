@@ -11,13 +11,18 @@ sudo apt autoremove --purge -y linux*generic*
 sudo add-apt-repository -y ppa:damentz/liquorix
 sudo apt install -y linux-headers-liquorix-amd64 linux-image-liquorix-amd64
 ```
-### Driver NVIDIA #bug-no-vulkan
+### Driver NVIDIA #vulkan-fix
 ```bash
+sudo apt autoremove --purge -yn *nvidia* *libnvidia*
 #sudo add-apt-repository -y ppa:graphics-drivers/ppa
+sudo add-apt-repository -y ppa:system76/pop
 #echo deb https://packages.lunarg.com/vulkan/1.1.106 bionic main | sudo tee -a /etc/apt/sources.list.d/lunarg-vulkan-1.1.106-bionic.list
 #wget -qO - http://packages.lunarg.com/lunarg-signing-key-pub.asc | sudo apt-key add -
-#sudo apt autoremove --purge -y nvidia* libnvidia*
-#sudo apt install -y nvidia-driver-435 lunarg-via lunarg-vkconfig lunarg-vktrace lunarg-vulkan-sdk;sudo apt dist-upgrade -y
+echo '# POP!_OS PPA
+Package: *
+Pin: release o=LP-PPA-system76-pop
+Pin-Priority: 100' | sudo tee /etc/apt/preferences.d/pop_os;sudo apt update
+sudo apt install -y nvidia-driver-435 #lunarg-via lunarg-vkconfig lunarg-vktrace lunarg-vulkan-sdk
 ```
 ### Otimizações de desempenho
 ```bash
