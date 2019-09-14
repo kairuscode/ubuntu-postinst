@@ -90,6 +90,8 @@ git clone https://github.com/dmo60/CoverflowAltTab
 mv -v CoverflowAltTab/CoverflowAltTab@dmo60.de/ ~/.local/share/gnome-shell/extensions/
 # Focus my window
 git clone https://github.com/v-dimitrov/gnome-shell-extension-stealmyfocus ~/.local/share/gnome-shell/extensions/focus-my-window@varianto25.com/
+# YouTube search provider
+git clone https://gitlab.gnome.org/atareao/youtube-search-provider.git ~/.local/share/gnome-shell/extensions/youtube-search-provider@atareao.es
 ```
 ### WINE
 ```bash
