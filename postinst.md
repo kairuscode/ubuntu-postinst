@@ -14,8 +14,10 @@ sudo apt install -y linux-headers-liquorix-amd64 linux-image-liquorix-amd64
 ### Driver NVIDIA #bug-no-vulkan
 ```bash
 #sudo add-apt-repository -y ppa:graphics-drivers/ppa
+#echo deb https://packages.lunarg.com/vulkan/1.1.106 bionic main | sudo tee -a /etc/apt/sources.list.d/lunarg-vulkan-1.1.106-bionic.list
+#wget -qO - http://packages.lunarg.com/lunarg-signing-key-pub.asc | sudo apt-key add -
 #sudo apt autoremove --purge -y nvidia* libnvidia*
-#sudo apt install -y nvidia-driver-435;sudo apt dist-upgrade -y
+#sudo apt install -y nvidia-driver-435 lunarg-via lunarg-vkconfig lunarg-vktrace lunarg-vulkan-sdk;sudo apt dist-upgrade -y
 ```
 ### Otimizações de desempenho
 ```bash
