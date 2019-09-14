@@ -79,7 +79,7 @@ cd gnome-shell-extension-blyr/;make local-install;cd ..
 git clone https://github.com/home-sweet-gnome/dash-to-panel.git
 cd dash-to-panel;make install;cd ..
 # Tray icons
-#git clone https://github.com/zhangkaizhao/gnome-shell-extension-tray-icons .local/share/gnome-shell/extensions/tray-icons@zhangkaizhao.com
+#git clone https://github.com/zhangkaizhao/gnome-shell-extension-tray-icons ~/.local/share/gnome-shell/extensions/tray-icons@zhangkaizhao.com
 # GSConnect
 wget -c https://github.com/andyholmes/gnome-shell-extension-gsconnect/releases/download/v24/gsconnect@andyholmes.github.io.zip #update_link
 mkdir -pv ~/.local/share/gnome-shell/extensions
@@ -87,7 +87,9 @@ rm -rfv ~/.local/share/gnome-shell/extensions/gsconnect@andyholmes.github.io
 unzip -o gsconnect@andyholmes.github.io.zip -d ~/.local/share/gnome-shell/extensions/gsconnect@andyholmes.github.io
 # Coverflow
 git clone https://github.com/dmo60/CoverflowAltTab
-mv -v CoverflowAltTab/CoverflowAltTab@dmo60.de/ .local/share/gnome-shell/extensions/
+mv -v CoverflowAltTab/CoverflowAltTab@dmo60.de/ ~/.local/share/gnome-shell/extensions/
+# Focus my window
+git clone https://github.com/v-dimitrov/gnome-shell-extension-stealmyfocus ~/.local/share/gnome-shell/extensions/focus-my-window@varianto25.com/
 ```
 ### WINE
 ```bash
