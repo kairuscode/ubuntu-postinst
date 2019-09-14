@@ -8,3 +8,10 @@ Primeiro eu executo os comandos indicados no arquivo [**postinst.md**](https://g
 
 Uma imagem _**ilustrativa**_ de como ficou o meu desktop:
 ![screenshot](https://github.com/rauldipeas/ubuntu-postinst/raw/master/resources/screenshot.png)
+
+**Problemas não solucionados:**
+ - Não consegui ativar o _**Vulkan**_ e consequentemente não consigo rodar jogos com o _**DXVK**_, mesmo usando o _**PPA de drivers**_, não funcionou.
+ - Não sei como setar o tema _**Materia-dark-compact**_ para o _shell_ do _**GDM**_.
+ - Não sei como importar automaticamente as configurações do _**Dash-to-panel**_.
+ - Não encontrei uma _extensão_ do _**GNOME**_ que me permita fazer um ajuste fino nos ícones da _área de notificação_, gostaria de _diminuir o tamanho_ e o _espaçamento_ dos ícones, testei algumas, mas nenhuma funcionou.
+ - Acontece um _atraso/travamento_ quando eu uso o comando `xdotool` nos _gestos_ do mouse.
