@@ -80,6 +80,9 @@ wget -c https://github.com/andyholmes/gnome-shell-extension-gsconnect/releases/d
 mkdir -pv ~/.local/share/gnome-shell/extensions
 rm -rfv ~/.local/share/gnome-shell/extensions/gsconnect@andyholmes.github.io
 unzip -o gsconnect@andyholmes.github.io.zip -d ~/.local/share/gnome-shell/extensions/gsconnect@andyholmes.github.io
+# Coverflow
+git clone https://github.com/dmo60/CoverflowAltTab
+mv -v CoverflowAltTab/CoverflowAltTab@dmo60.de/ .local/share/gnome-shell/extensions/
 ```
 ### WINE
 ```bash

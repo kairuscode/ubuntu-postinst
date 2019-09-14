@@ -35,7 +35,7 @@ gsettings set org.gnome.settings-daemon.plugins.color night-light-temperature 'u
 gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-timeout 3600
 gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type nothing
 gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-type  nothing
-gsettings set org.gnome.shell enabled-extensions "['dash-to-panel@jderose9.github.com', 'gsconnect@andyholmes.github.io', 'ubuntu-appindicators@ubuntu.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'blyr@yozoon.dev.gmail.com']"
+gsettings set org.gnome.shell enabled-extensions "['dash-to-panel@jderose9.github.com', 'gsconnect@andyholmes.github.io', 'ubuntu-appindicators@ubuntu.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'blyr@yozoon.dev.gmail.com', 'CoverflowAltTab@dmo60.de']"
 gsettings set org.gnome.shell favorite-apps "['org.gnome.Nautilus.desktop', 'firefox.desktop', 'org.gnome.FeedReader.desktop', 'rambox.desktop', 'org.kde.kpat.desktop', 'steam.desktop', 'net.lutris.Lutris.desktop', 'ubuntustudio-controls.desktop', 'ToneLib-Zoom.desktop', 'carla.desktop', 'cockos-reaper.desktop', 'com.blackmagicdesign.resolve.desktop', 'gimp.desktop']"
 gsettings set org.gtk.Settings.FileChooser sort-directories-first true
 ```
