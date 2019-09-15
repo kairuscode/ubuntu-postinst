@@ -6,7 +6,7 @@ Primeiro eu executo os comandos indicados no arquivo [**postinst.md**](https://g
 
 **Aviso**: _os comandos indicados devem ser executados 1 de cada vez, para garantir que não hajam erros._
 
-Uma imagem _**ilustrativa**_ de como ficou o meu desktop:
+Algumas imagens _**ilustrativas**_ de como ficou o meu desktop:
 ![screenshot](https://github.com/rauldipeas/ubuntu-postinst/raw/master/screenshot.png)
 
 _**Jogos**_...
