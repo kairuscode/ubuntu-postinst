@@ -26,6 +26,7 @@ gsettings set org.gnome.desktop.screensaver picture-uri 'file:////usr/share/gnom
 gsettings set org.gnome.desktop.screensaver primary-color '#000000'
 gsettings set org.gnome.desktop.screensaver secondary-color '#000000'
 gsettings set org.gnome.gedit.preferences.editor display-line-numbers true
+gsettings set org.gnome.mutter center-new-windows true
 gsettings set org.gnome.nautilus.desktop trash-icon-visible false
 gsettings set org.gnome.nautilus.desktop volumes-visible false
 gsettings set org.gnome.nautilus.icon-view default-zoom-level standard
