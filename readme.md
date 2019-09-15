@@ -9,6 +9,9 @@ Primeiro eu executo os comandos indicados no arquivo [**postinst.md**](https://g
 Uma imagem _**ilustrativa**_ de como ficou o meu desktop:
 ![screenshot](https://github.com/rauldipeas/ubuntu-postinst/raw/master/screenshot.png)
 
+_**Jogos**_...
+![screenshot2](https://github.com/rauldipeas/ubuntu-postinst/raw/master/screenshot2.png)
+
 **Problemas não solucionados:**
  - [x] ~~Não consegui ativar o _**Vulkan**_ e consequentemente não consigo rodar jogos com o _**DXVK**_, mesmo usando o _**PPA de drivers**_, não funcionou.~~ [**#vulkan-fix**](https://github.com/rauldipeas/ubuntu-postinst/blob/master/postinst.md#driver-nvidia-vulkan-fix)
  - [ ] Não sei como setar o tema _**Materia-dark-compact**_ para o _shell_ do _**GDM**_.
