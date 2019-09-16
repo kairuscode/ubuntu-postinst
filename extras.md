@@ -223,3 +223,6 @@ cp /etc/xdg/autostart/spice-vdagent.desktop ~/.config/autostart #acesso_remoto
 cp /etc/xdg/autostart/update-notifier.desktop ~/.config/autostart #atualizador_de_programas
 echo X-GNOME-Autostart-enabled=false | tee -a ~/.config/autostart/*.desktop
 ```
+### Ubuntu Kernel Upgrade
+sudo wget -O /usr/local/bin/do-kernel-upgrade https://raw.githubusercontent.com/muhasturk/ukupgrade/master/ukupgrade
+sudo chmod -v +x /usr/local/bin/do-kernel-upgrade
