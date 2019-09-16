@@ -117,9 +117,9 @@ alias gotop-monokai='gotop -c monokai'" >> ~/.bashrc
 ```
 ### Insync
 ```bash
-wget -c https://d2t3ff60b2tol4.cloudfront.net/builds/insync-nautilus_3.0.13.40201_all.deb #update_link
-wget -c https://d2t3ff60b2tol4.cloudfront.net/builds/insync_3.0.15.40277-bionic_amd64.deb #update_link
-sudo apt install -y ./insync*.deb
+#wget -c https://d2t3ff60b2tol4.cloudfront.net/builds/insync-nautilus_3.0.13.40201_all.deb #update_link
+#wget -c https://d2t3ff60b2tol4.cloudfront.net/builds/insync_3.0.15.40277-bionic_amd64.deb #update_link
+#sudo apt install -y ./insync*.deb
 ```
 ### MEGA
 ```bash
