@@ -224,5 +224,7 @@ cp /etc/xdg/autostart/update-notifier.desktop ~/.config/autostart #atualizador_d
 echo X-GNOME-Autostart-enabled=false | tee -a ~/.config/autostart/*.desktop
 ```
 ### Ubuntu Kernel Upgrade
+```bash
 sudo wget -O /usr/local/bin/do-kernel-upgrade https://raw.githubusercontent.com/muhasturk/ukupgrade/master/ukupgrade
 sudo chmod -v +x /usr/local/bin/do-kernel-upgrade
+```
