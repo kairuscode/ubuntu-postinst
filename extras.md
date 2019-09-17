@@ -94,7 +94,7 @@ sudo apt install -y ./crow-translate*.deb
 ```
 ### Etcher
 ```bash
-wget -c https://github.com/balena-io/etcher/releases/download/v1.5.56/balena-etcher-electron_1.5.56_amd64.deb #update_link
+wget -c https://github.com/balena-io/etcher/releases/download/v1.5.57/balena-etcher-electron_1.5.57_amd64.deb #update_link
 sudo apt install -y ./balena-etcher*.deb
 ```
 ### GitHub Desktop
