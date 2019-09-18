@@ -98,6 +98,9 @@ unzip -o gsconnect@andyholmes.github.io.zip -d ~/.local/share/gnome-shell/extens
 git clone https://github.com/v-dimitrov/gnome-shell-extension-stealmyfocus ~/.local/share/gnome-shell/extensions/focus-my-window@varianto25.com/
 # YouTube search provider
 git clone https://gitlab.gnome.org/atareao/youtube-search-provider.git ~/.local/share/gnome-shell/extensions/youtube-search-provider@atareao.es
+# Status area horizontal spacing
+git clone https://gitlab.com/p91paul/status-area-horizontal-spacing-gnome-shell-extension
+mv -v status-area-horizontal-spacing-gnome-shell-extension/status-area-horizontal-spacing@mathematical.coffee.gmail.com/ ~/.local/share/gnome-shell/extensions/
 ```
 ### WINE
 ```bash
