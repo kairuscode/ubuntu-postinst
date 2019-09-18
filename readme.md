@@ -26,4 +26,4 @@ _**Cockos REAPER**_...
  - [ ] Não sei como setar o tema _**Materia-dark-compact**_ para o _shell_ do _**GDM**_.
  - [ ] Não sei como importar automaticamente as configurações do _**Dash-to-panel**_.
  - [ ] Não encontrei uma _extensão_ do _**GNOME**_ que me permita fazer um ajuste fino nos ícones da _área de notificação_, gostaria de _diminuir o tamanho_ e o _espaçamento_ dos ícones, testei algumas, mas nenhuma funcionou.
- - [ ] Acontece um _atraso/travamento_ quando eu uso o comando `xdotool` nos _gestos_ do mouse.
+ - [ ] Acontece um _atraso/travamento_ quando eu uso o comando `xdotool key` nos _gestos_ do mouse.
