@@ -160,10 +160,10 @@ sudo add-apt-repository -yn ppa:mc3man/bionic-media # Media codecs
 sudo add-apt-repository -yn ppa:xuzhen666/gnome-mpv # Celluloid
 sudo add-apt-repository -y ppa:mkusb/ppa # MKUSB
 #sudo add-apt-repository -y ppa:atareao/telegram
-sudo apt install -y --no-install-recommends gnome-mpv kpat mkusb
+sudo apt install -y --no-install-recommends gnome-mpv kpat mkusb sweeper
 gsettings set io.github.celluloid-player.Celluloid mpv-options --save-position-on-quit
 echo 'StartupWMClass=kpat' | sudo tee -a /usr/share/applications/org.kde.kpat.desktop
-sudo apt install -y audacity caffeine deja-dup deluge-gtk deluge-web deluged galculator galternatives gnome-alsamixer gnome-sushi gnome-usage hardinfo nautilus-dropbox neofetch openssh-server sweeper synaptic tilix unrar vinagre x11vnc #telegram
+sudo apt install -y audacity caffeine deja-dup deluge-gtk deluge-web deluged galculator galternatives gnome-alsamixer gnome-sushi gnome-usage hardinfo nautilus-dropbox neofetch openssh-server synaptic tilix unrar vinagre x11vnc #telegram
 sudo apt autoremove --purge -y gnome-terminal
 sudo rm -rfv /usr/share/applications/caffeine.desktop /usr/share/applications/debian-*xterm.desktop /usr/share/applications/guidus.desktop
 sudo sed -i 's/Icon=\/usr\/share\/pixmaps\/gnome-alsamixer\/gnome-alsamixer-icon.png/Icon=gnome-alsamixer-icon/g' /usr/share/applications/gnome-alsamixer.desktop
