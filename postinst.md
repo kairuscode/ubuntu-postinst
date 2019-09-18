@@ -5,11 +5,16 @@ sudo apt update;sudo apt dist-upgrade -y
 sudo apt install -y deborphan
 deborphan | xargs sudo apt autoremove --purge -y
 ```
+### Ubuntu Kernel Upgrade
+```bash
+sudo wget -O /usr/local/bin/do-kernel-upgrade https://raw.githubusercontent.com/muhasturk/ukupgrade/master/ukupgrade
+sudo chmod -v +x /usr/local/bin/do-kernel-upgrade;do-kernel-upgrade
+sudo apt autoremove --purge -y linux*generic*
+```
 ### Kernel Liquorix
 ```bash
-sudo apt autoremove --purge -y linux*generic*
-sudo add-apt-repository -y ppa:damentz/liquorix
-sudo apt install -y linux-headers-liquorix-amd64 linux-image-liquorix-amd64
+#sudo add-apt-repository -y ppa:damentz/liquorix
+#sudo apt install -y linux-headers-liquorix-amd64 linux-image-liquorix-amd64
 ```
 ### Driver NVIDIA #vulkan-fix
 ```bash
