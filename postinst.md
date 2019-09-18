@@ -10,6 +10,7 @@ deborphan | xargs sudo apt autoremove --purge -y
 sudo wget -O /usr/local/bin/do-kernel-upgrade https://raw.githubusercontent.com/muhasturk/ukupgrade/master/ukupgrade
 sudo chmod -v +x /usr/local/bin/do-kernel-upgrade;do-kernel-upgrade
 sudo apt autoremove --purge -y linux*generic*
+sudo apt install -y intel-microcode iucode-tool thermald
 ```
 ### Kernel Liquorix
 ```bash
