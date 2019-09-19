@@ -146,6 +146,11 @@ sudo chmod +x -v /usr/local/bin/speedtest-cli
 wget -c https://github.com/oguzhaninan/Stacer/releases/download/v1.1.0/stacer_1.1.0_amd64.deb
 sudo apt install -y ./stacer*.deb
 ```
+### Stremio
+```bash
+wget -c https://dl.strem.io/linux/v4.4.54/stremio_4.4.52-1_amd64.deb
+sudo apt install -y ./stremio*.deb
+```
 ### VirtualBox
 ```bash
 wget -c https://download.virtualbox.org/virtualbox/6.0.12/virtualbox-6.0_6.0.12-133076~Ubuntu~bionic_amd64.deb
