@@ -53,7 +53,7 @@ kernel.sched_autogroup_enabled=0
 vm.dirty_background_bytes=16777216
 vm.dirty_bytes=50331648
 kernel.pid_max=4194304' | sudo tee /etc/sysctl.d/rauldipeas.conf
-sudo sed -i 's/; realtime/realtime/g' /etc/pulse/daemon.conf
+#sudo sed -i 's/; realtime/realtime/g' /etc/pulse/daemon.conf
 systemctl --user mask evolution-addressbook-factory.service evolution-calendar-factory.service evolution-source-registry.service
 ```
 ### Plymouth
