@@ -40,7 +40,8 @@ cpu unlimited
 fsize unlimited
 msgqueue unlimited
 locks unlimited
-* hard nofile 1048576' | sudo tee /etc/security/limits.d/rauldipeas.conf
+* hard nofile 1048576
+@audio   -  nice      -19' | sudo tee /etc/security/limits.d/rauldipeas.conf
 echo 'vm.swappiness=10
 net.ipv4.tcp_syncookies=1
 net.ipv4.ip_forward=1
