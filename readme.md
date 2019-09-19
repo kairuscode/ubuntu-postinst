@@ -24,6 +24,6 @@ _**Cockos REAPER**_...
 **Problemas não solucionados:**
  - [x] ~~Não consegui ativar o _**Vulkan**_ e consequentemente não consigo rodar jogos com o _**DXVK**_, mesmo usando o _**PPA de drivers**_, não funcionou.~~ [**#vulkan-fix**](https://github.com/rauldipeas/ubuntu-postinst/blob/master/postinst.md#driver-nvidia-vulkan-fix)
  - [ ] Não sei como setar o tema _**Materia-dark-compact**_ para o _shell_ do _**GDM**_.
- - [ ] Não sei como importar automaticamente as configurações do _**Dash-to-panel**_.
+ - [x] ~~Não sei como importar automaticamente as configurações do _**Dash-to-panel**_.~~ [**#import-fix**](https://github.com/rauldipeas/ubuntu-postinst/blob/master/extras.md#temas-import-fix)
  - [x] ~~Não encontrei uma _extensão_ do _**GNOME**_ que me permita fazer um ajuste fino nos ícones da _área de notificação_, gostaria de _diminuir o tamanho_ e o _espaçamento_ dos ícones, testei algumas, mas nenhuma funcionou.~~ [**#tray-fix**](https://github.com/rauldipeas/ubuntu-postinst/blob/master/postinst.md#gnome-shell-extensions-tray-fix)
  - [ ] Acontece um _atraso/travamento_ quando eu uso o comando `xdotool key` nos _gestos_ do mouse.

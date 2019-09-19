@@ -1,6 +1,6 @@
 # Pós instalação do Ubuntu 18.04 - 3/09/2019
 # Extras
-### Temas
+### Temas #import-fix
 ```bash
 sudo add-apt-repository -yn ppa:dyatlov-igor/materia-theme
 sudo add-apt-repository -yn ppa:papirus/papirus
@@ -39,6 +39,8 @@ gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-typ
 gsettings set org.gnome.shell enabled-extensions "['dash-to-panel@jderose9.github.com', 'gsconnect@andyholmes.github.io', 'ubuntu-appindicators@ubuntu.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'blyr@yozoon.dev.gmail.com', 'focus-my-window@varianto25.com', 'youtube-search-provider@atareao.es', 'alternate-tab@gnome-shell-extensions.gcampax.github.com', 'status-area-horizontal-spacing@mathematical.coffee.gmail.com']"
 gsettings set org.gnome.shell favorite-apps "['org.gnome.Nautilus.desktop', 'firefox.desktop', 'org.gnome.FeedReader.desktop', 'rambox.desktop', 'org.kde.kpat.desktop', 'steam.desktop', 'net.lutris.Lutris.desktop', 'ubuntustudio-controls.desktop', 'ToneLib-Zoom.desktop', 'carla.desktop', 'cockos-reaper.desktop', 'com.blackmagicdesign.resolve.desktop', 'gimp.desktop']"
 gsettings set org.gtk.Settings.FileChooser sort-directories-first true
+wget -c https://raw.githubusercontent.com/rauldipeas/ubuntu-postinst/master/resources/dash-to-panel.cfg
+dconf load /org/gnome/shell/extensions/dash-to-panel/ < dash-to-panel.cfg
 ```
 ### GRUB
 ```bash
