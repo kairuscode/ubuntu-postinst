@@ -101,6 +101,11 @@ sudo apt install -y ./crow-translate*.deb
 wget -c https://github.com/balena-io/etcher/releases/download/v1.5.57/balena-etcher-electron_1.5.57_amd64.deb #update_link
 sudo apt install -y ./balena-etcher*.deb
 ```
+### GameMode
+```bash
+sudo add-apt-repository -y ppa:samoilov-lex/gamemode
+sudo apt install gamemode
+```
 ### GitHub Desktop
 ```bash
 wget -c https://github.com/shiftkey/desktop/releases/download/release-2.1.0-linux1/GitHubDesktop-linux-2.1.0-linux1.deb #update_link
