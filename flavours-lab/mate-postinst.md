@@ -125,7 +125,7 @@ sudo apt install -y ./appimaged*.deb
 sudo cp -v /usr/share/applications/appimaged.desktop /etc/xdg/autostart/
 sudo apt install -y --no-install-recommends gnome-mpv
 gsettings set io.github.celluloid-player.Celluloid mpv-options --save-position-on-quit
-sudo apt install -y deluge-gtk deluge-web deluged flowblade gnome-alsamixer neofetch p7zip-full redshift-gtk unar #openssh-server x11vnc
+sudo apt install -y deluge-gtk deluge-web deluged diodon flowblade gnome-alsamixer neofetch p7zip-full redshift-gtk unar #openssh-server x11vnc
 sudo sed -i 's/Icon=\/usr\/share\/pixmaps\/gnome-alsamixer\/gnome-alsamixer-icon.png/Icon=gnome-alsamixer-icon/g' /usr/share/applications/gnome-alsamixer.desktop
 sudo wget -cO /usr/local/bin/neofetch https://raw.githubusercontent.com/dylanaraps/neofetch/master/neofetch
 sudo chmod +x -v /usr/local/bin/neofetch
