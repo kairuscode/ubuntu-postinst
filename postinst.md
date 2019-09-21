@@ -166,7 +166,7 @@ sudo apt install -y ./ToneLib*.deb
 ```
  - ### LinVST
 ```bash
-wget -c https://github.com/osxmidi/LinVst/releases/download/2.66/LinVst-64bit-32bit_2.6.6.deb #update_link
+wget -c https://github.com/osxmidi/LinVst/releases/download/2.7/LinVst-64bit-32bit_2.7.0.deb #update_link
 sudo apt install -y ./LinVst*.deb
 ```
  - ### Edição de imagem
