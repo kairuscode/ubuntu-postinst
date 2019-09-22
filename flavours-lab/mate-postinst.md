@@ -97,6 +97,8 @@ Icon=text-x-plain" | sudo tee -a /usr/share/applications/cockos-reaper.desktop
 ## Aparência e usabilidade
 ```bash
 sudo apt install -y breeze-cursor-theme folder-color-caja fonts-emojione fonts-powerline materia-gtk-theme papirus-icon-theme undistract-me
+git clone https://github.com/brokoli-mate/mate-window-applets-themes
+sudo cp -rv mate-window-applets-themes/window-buttons-themes/* /usr/share/icons/mate-window-applets/
 wget -c https://github.com/hbin/top-programming-fonts/raw/master/Monaco-Linux.ttf
 mkdir -p ~/.fonts;cp -rv Monaco* ~/.fonts
 wget -c http://ftp.us.debian.org/debian/pool/main/f/fonts-quicksand/fonts-quicksand_0.2016-2_all.deb #update_link
