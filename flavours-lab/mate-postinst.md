@@ -134,12 +134,14 @@ sudo chmod +x -v /usr/local/bin/neofetch
 wget -c https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
 sudo apt install -y ./teamviewer*.deb
 ```
-## MATE Tweak
-#### - Layout **Cupertino**
-#### - Botões de janela à direita
-#### - Desativar animações
-#### - Temas _**Breeze_Snow**_/_**Materia-dark-compact**_/_**Papirus-Dark**_
-
+## MATE Tweak/Aparência/Painel
+ - Layout **Cupertino**
+ - Botões de janela à direita
+ - Desativar animações
+ - Temas _**Breeze_Snow**_/_**Materia-dark-compact**_/_**Papirus-Dark**_
+ - Window Buttons com tema _**Materia**_
+ - Cor _**#282828**_ para o painel
+ 
 ## WINE
 ```bash
 winetricks mfc42
