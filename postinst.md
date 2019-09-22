@@ -103,6 +103,8 @@ git clone https://gitlab.gnome.org/atareao/youtube-search-provider.git ~/.local/
 # Status area horizontal spacing
 git clone https://gitlab.com/p91paul/status-area-horizontal-spacing-gnome-shell-extension
 mv -v status-area-horizontal-spacing-gnome-shell-extension/status-area-horizontal-spacing@mathematical.coffee.gmail.com/ ~/.local/share/gnome-shell/extensions/
+# GrownUp Notifications
+git clone https://github.com/jimmytheneutrino/grownup_notifications ~/.local/share/gnome-shell/extensions/grownup_notifications@11.2017.jimmytheneutrino/
 ```
 ### WINE
 ```bash
