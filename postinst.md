@@ -5,10 +5,10 @@ sudo apt update;sudo apt dist-upgrade -y
 sudo apt install -y deborphan
 deborphan | xargs sudo apt autoremove --purge -y
 ```
-### Ubuntu Kernel Upgrade
+### XanMod
 ```bash
-sudo wget -O /usr/local/bin/do-kernel-upgrade https://raw.githubusercontent.com/muhasturk/ukupgrade/master/ukupgrade
-sudo chmod -v +x /usr/local/bin/do-kernel-upgrade;do-kernel-upgrade
+echo 'deb http://deb.xanmod.org releases main' | sudo tee /etc/apt/sources.list.d/xanmod-kernel.list && wget -qO - https://dl.xanmod.org/gpg.key | sudo apt-key add -
+sudo apt update && sudo apt -y install linux-xanmod
 sudo apt autoremove --purge -y linux*generic*
 sudo apt install -y intel-microcode iucode-tool thermald
 ```
