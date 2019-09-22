@@ -79,7 +79,7 @@ sudo sed -i 's/2c001e/000000/g' /usr/share/gnome-shell/theme/ubuntu.css
 ```
 ### GNOME Shell Extensions #tray-fix
 ```bash
-sudo apt install -y build-essential chrome-gnome-shell gir1.2-gtkclutter-1.0 git gnome-shell-extension-weather gnome-shell-extensions
+sudo apt install -y build-essential chrome-gnome-shell gir1.2-gtkclutter-1.0 git gnome-shell-extension-remoe-dropdown-arrows gnome-shell-extension-weather gnome-shell-extensions
 # Blyr
 git clone https://github.com/yozoon/gnome-shell-extension-blyr
 cd gnome-shell-extension-blyr/;make local-install;cd ..
