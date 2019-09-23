@@ -56,6 +56,7 @@ $# gsettings set org.gnome.desktop.interface gtk-theme Materia-dark-compact
 $# gsettings set org.gnome.desktop.interface icon-theme Papirus-Dark
 $# gsettings set org.gnome.desktop.interface cursor-theme Breeze_Snow
 $# gsettings set org.gnome.login-screen logo '/usr/share/plymouth/themes/ubuntu-logo/ubuntu-logo.png'
+$# gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click true
 #$# gsettings set org.gnome.shell enabled-extensions "['user-theme@gnome-shell-extensions.gcampax.github.com']"
 #$# gsettings set org.gnome.shell.extensions.user-theme name Materia-dark-compact
 $# exit
