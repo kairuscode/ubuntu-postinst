@@ -146,7 +146,7 @@ sudo apt install -y ./teamviewer*.deb
 winetricks mfc42
 #wget -c https://download.microsoft.com/download/8/e/c/8ec3a7d8-05b4-440a-a71e-ca3ee25fe057/rktools.exe
 #wine rktools.exe
-winetricks vcrun2015
+winetricks vcrun2013 vcrun2015
 #wget -c https://github.com/osxmidi/LinVst/blob/master/Waves/Waves.reg
 #regedit Waves.reg
 winetricks win7
