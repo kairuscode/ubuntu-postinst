@@ -5,17 +5,12 @@ sudo apt update;sudo apt dist-upgrade -y
 sudo apt install -y deborphan
 deborphan | xargs sudo apt autoremove --purge -y
 ```
-### XanMod
+### Liquorix
 ```bash
-echo 'deb http://deb.xanmod.org releases main' | sudo tee /etc/apt/sources.list.d/xanmod-kernel.list && wget -qO - https://dl.xanmod.org/gpg.key | sudo apt-key add -
-sudo apt update && sudo apt -y install linux-xanmod
+sudo add-apt-repository -y ppa:damentz/liquorix
+sudo apt install -y linux-headers-liquorix-amd64 linux-image-liquorix-amd64
 sudo apt autoremove --purge -y linux*generic*
 sudo apt install -y intel-microcode iucode-tool thermald
-```
-### Kernel Liquorix
-```bash
-#sudo add-apt-repository -y ppa:damentz/liquorix
-#sudo apt install -y linux-headers-liquorix-amd64 linux-image-liquorix-amd64
 ```
 ### Driver NVIDIA #vulkan-fix
 ```bash
