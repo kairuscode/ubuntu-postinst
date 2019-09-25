@@ -190,7 +190,9 @@ sudo rm -rfv /usr/share/applications/com.blackmagicdesign.resolve-*.desktop
 ### Gerenciadores de jogos
 ```bash
 sudo add-apt-repository -y ppa:lutris-team/lutris
-sudo apt install -y libvulkan1:i386 lutris steam-installer xboxdrv
+sudo apt install -y libvulkan1:i386 lutris xboxdrv
+wget -c http://repo.steampowered.com/steam/archive/precise/steam_latest.deb
+sudo apt -y install ./steam_latest.deb
 ```
 ### Atom
 ```bash
