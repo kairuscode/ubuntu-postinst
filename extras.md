@@ -157,6 +157,11 @@ sudo apt install -y ./stacer*.deb
 wget -c https://dl.strem.io/linux/v4.4.54/stremio_4.4.52-1_amd64.deb
 sudo apt install -y ./stremio*.deb
 ```
+### TeamViewer
+```bash
+wget -c https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
+sudo apt install -y teamviewer*.deb
+```
 ### VirtualBox
 ```bash
 wget -c https://download.virtualbox.org/virtualbox/6.0.12/virtualbox-6.0_6.0.12-133076~Ubuntu~bionic_amd64.deb
