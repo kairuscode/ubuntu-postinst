@@ -1,4 +1,4 @@
-## Repositórios
+### Repositórios
 ```bash
 echo "deb https://download.opensuse.org/repositories/Emulators:/Wine:/Debian/xUbuntu_18.04 ./" | sudo tee /etc/apt/sources.list.d/wine-obs.list
 wget -O- -q https://download.opensuse.org/repositories/Emulators:/Wine:/Debian/xUbuntu_18.04/Release.key | sudo apt-key add -
@@ -7,7 +7,7 @@ sudo add-apt-repository -y ppa:papirus/papirus-dev
 sudo add-apt-repository -y ppa:mc3man/bionic-media
 sudo add-apt-repository -y ppa:xuzhen666/gnome-mpv
 ```
-## Atualização e limpeza
+### Atualização e limpeza
 ```bash
 sudo apt dist-upgrade -y
 sudo apt install -y deborphan git
@@ -16,7 +16,7 @@ sudo apt -y install linux-lowlatency-hwe-18.04
 sudo apt autoremove --purge -y linux*generic*
 sudo apt install -y intel-microcode iucode-tool thermald
 ```
-## Otimizações de desempenho
+### Otimizações de desempenho
 ```bash
 sudo usermod -aG audio $USER;sudo usermod -aG video $USER
 echo 'hard stack unlimited
@@ -51,7 +51,7 @@ sudo update-initramfs -u -k all
 git clone https://github.com/vinceliuice/grub2-themes
 cd grub2-themes;sudo ./install.sh -l;cd ..
 ```
-## Pro Áudio
+### Pro Áudio
 ```bash
 echo jackd2 jackd/tweak_rt_limits string true | sudo debconf-set-selections
 sudo apt install -y --no-install-recommends patchage ubuntustudio-controls
@@ -93,7 +93,7 @@ Name[pt_BR]=Licença e contrato de usuário
 Exec=xdg-open /opt/REAPER/license.txt
 Icon=text-x-plain" | sudo tee -a /usr/share/applications/cockos-reaper.desktop
 ```
-## Aparência e usabilidade
+### Aparência e usabilidade
 ```bash
 sudo apt install -y breeze-cursor-theme folder-color-caja fonts-emojione fonts-powerline materia-gtk-theme papirus-icon-theme undistract-me
 git clone https://github.com/brokoli-mate/mate-window-applets-themes
@@ -119,7 +119,7 @@ dconf write /net/launchpad/plank/docks/dock1/theme 'Transparent'
 gsettings set org.mate.peripherals-touchpad natural-scroll true
 gsettings set org.mate.Marco.general mouse-button-modifier '<Super>'
 ```
-## Extras
+### Extras
 ```bash
 wget -c https://github.com/AppImage/appimaged/releases/download/continuous/appimaged_1-alpha-git05c4438.travis209_amd64.deb #update_link
 sudo apt install -y ./appimaged*.deb
@@ -133,7 +133,7 @@ sudo chmod +x -v /usr/local/bin/neofetch
 wget -c https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
 sudo apt install -y ./teamviewer*.deb
 ```
-## MATE Tweak/Aparência/Painel
+### MATE Tweak/Aparência/Painel
  - Layout **Cupertino**
  - Botões de janela à direita
  - Desativar animações
@@ -141,7 +141,7 @@ sudo apt install -y ./teamviewer*.deb
  - Window Buttons com tema _**Materia**_
  - Cor _**#282828**_ para o painel
 
-## WINE
+### WINE
 ```bash
 winetricks mfc42
 #wget -c https://download.microsoft.com/download/8/e/c/8ec3a7d8-05b4-440a-a71e-ca3ee25fe057/rktools.exe
@@ -151,7 +151,7 @@ winetricks vcrun2013 vcrun2015
 #regedit Waves.reg
 winetricks win7
 ```
-## AutoStart NoDisplay=false
+### AutoStart NoDisplay=false
 ```bash
 sudo sed -i 's/NoDisplay=true/NoDisplay=false/g' /etc/xdg/autostart/*.desktop
 mkdir -p ~/.config/autostart
