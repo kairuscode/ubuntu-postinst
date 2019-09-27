@@ -115,7 +115,8 @@ STAGING_RT_PRIORITY_BASE=90
 WINE_RT=15
 WINE_SRV_RT=10
 STAGING_WRITECOPY=1
-STAGING_SHARED_MEMORY=1' >> ~/.profile
+STAGING_SHARED_MEMORY=1
+WINE_ENABLE_PIPE_SYNC_FOR_APP=1' >> ~/.profile
 ```
 ## Aplicativos de criação de conteúdo multimídia
  - ### Ubuntu Studio Apps
