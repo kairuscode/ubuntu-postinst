@@ -169,8 +169,8 @@ sudo apt install -y --no-install-recommends ./virtualbox*.deb
 ```
 ### Webpin
 ```bash
-wget -c https://launchpadlibrarian.net/440481065/libgranite-common_5.2.5+r1436+pkg110~ubuntu5.0.1_all.deb
-wget -c https://launchpadlibrarian.net/440481067/libgranite5_5.2.5+r1436+pkg110~ubuntu5.0.1_amd64.deb
+#wget -c https://launchpadlibrarian.net/440481065/libgranite-common_5.2.5+r1436+pkg110~ubuntu5.0.1_all.deb
+#wget -c https://launchpadlibrarian.net/440481067/libgranite5_5.2.5+r1436+pkg110~ubuntu5.0.1_amd64.deb
 wget -c https://github.com/rauldipeas/ubuntu-postinst/raw/master/resources/com.github.artemanufrij.webpin_0.2.1_amd64.deb
 sudo apt install -y ./libgranite* ./com.github.artemanufrij.webpin*.deb
 ```
