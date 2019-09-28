@@ -2,7 +2,7 @@ Este é o meu script **_pessoal_** de pós instalação do **Ubuntu 18.04.3 LTS*
 
 Eu faço a instalação [_**mínima**_](https://www.youtube.com/watch?v=3CuzduPRrNQ) do **Ubuntu Desktop**.
 
-Primeiro eu executo os comandos indicados no arquivo [**postinst.md**](https://github.com/rauldipeas/ubuntu-postinst/blob/master/postinst.md) e na sequência eu executo os comandos indicados no arquivo [**extras.md**](https://github.com/rauldipeas/ubuntu-postinst/blob/master/extras.md), após executar todos os comandos, eu reinicio a máquina _~~e importo o arquivo [**dash-to-panel.cfg**](https://github.com/rauldipeas/ubuntu-postinst/blob/master/resources/dash-to-panel.cfg) nas configurações do **Dash-to-panel**~~_.
+Primeiro eu executo os comandos indicados no arquivo [**postinst.md**](https://github.com/rauldipeas/ubuntu-postinst/blob/master/postinst.md) e na sequência eu executo os comandos indicados no arquivo [**extras.md**](https://github.com/rauldipeas/ubuntu-postinst/blob/master/extras.md), após executar todos os comandos, eu reinicio a máquina <span style="color:grey">_~~e importo o arquivo [**dash-to-panel.cfg**](https://github.com/rauldipeas/ubuntu-postinst/blob/master/resources/dash-to-panel.cfg) nas configurações do **Dash-to-panel**~~_</span>.
 
 **Aviso**: _os comandos indicados devem ser executados 1 de cada vez, para garantir que não hajam erros._
 
@@ -29,8 +29,7 @@ Primeiro eu executo os comandos indicados no arquivo [**postinst.md**](https://g
  - [x] <span style="color:green">~~Não encontrei uma _extensão_ do _**GNOME**_ que me permita fazer um ajuste fino nos ícones da _área de notificação_, gostaria de _diminuir o tamanho_ e o _espaçamento_ dos ícones, testei algumas, mas nenhuma funcionou.~~</span> [**#tray-fix**](https://github.com/rauldipeas/ubuntu-postinst/blob/master/postinst.md#gnome-shell-extensions-tray-fix)
  - [ ] Acontece um _atraso/travamento_ quando eu uso o comando `xdotool key` nos _gestos_ do mouse.
 
- ![Atom](https://github.com/rauldipeas/ubuntu-postinst/raw/master/icons/atom.svg?sanitize=true)
- **Em desenvolvimento:**
+![Atom](https://github.com/rauldipeas/ubuntu-postinst/raw/master/icons/atom.svg?sanitize=true) **Em desenvolvimento:**
 
 ![xfce](https://github.com/rauldipeas/ubuntu-postinst/raw/master/icons/desktop-environment-xfce.svg?sanitize=true)
  [Desktop _**alternativo**_ com **XFCE**](https://github.com/rauldipeas/ubuntu-postinst/blob/master/flavours-lab/xfce-postinst.md)
