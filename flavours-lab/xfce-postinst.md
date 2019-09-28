@@ -93,5 +93,3 @@ Terminal=false
 Hidden=false
 Icon=xfce4-panel' > ~/.config/autostart/xfce4-panel-auto-opaque.desktop
 ```
-Imagem _**ilustrativa**_ de como ficou o meu desktop **XFCE**:
-![XFCE](https://github.com/rauldipeas/ubuntu-postinst/raw/master/flavours-lab/XFCE.png)
