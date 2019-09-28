@@ -4,7 +4,7 @@ Eu faço a instalação [_**mínima**_](https://www.youtube.com/watch?v=3CuzduPR
 
 Primeiro eu executo os comandos indicados no arquivo [**postinst.md**](https://github.com/rauldipeas/ubuntu-postinst/blob/master/postinst.md) e na sequência eu executo os comandos indicados no arquivo [**extras.md**](https://github.com/rauldipeas/ubuntu-postinst/blob/master/extras.md), após executar todos os comandos, eu reinicio a máquina <span style="color:grey">_~~e importo o arquivo [**dash-to-panel.cfg**](https://github.com/rauldipeas/ubuntu-postinst/blob/master/resources/dash-to-panel.cfg) nas configurações do **Dash-to-panel**~~_</span>.
 
-**Aviso**: _os comandos indicados devem ser executados 1 de cada vez, para garantir que não hajam erros._
+![bug](https://github.com/rauldipeas/ubuntu-postinst/raw/master/icons/tools-report-bug.svg?sanitize=true) **Aviso**: _os comandos indicados devem ser executados 1 de cada vez, para garantir que não hajam erros._
 
 ![Ubuntu](https://github.com/rauldipeas/ubuntu-postinst/raw/master/icons/distributor-logo-ubuntu.svg?sanitize=true) Algumas imagens _**ilustrativas**_ de como ficou o meu desktop:
 ![screenshot](https://github.com/rauldipeas/ubuntu-postinst/raw/master/screenshot.png)
