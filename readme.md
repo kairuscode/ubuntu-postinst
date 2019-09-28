@@ -29,6 +29,7 @@ Primeiro eu executo os comandos indicados no arquivo [**postinst.md**](https://g
  - [x] <span style="color:green">~~Não encontrei uma _extensão_ do _**GNOME**_ que me permita fazer um ajuste fino nos ícones da _área de notificação_, gostaria de _diminuir o tamanho_ e o _espaçamento_ dos ícones, testei algumas, mas nenhuma funcionou.~~</span> [**#tray-fix**](https://github.com/rauldipeas/ubuntu-postinst/blob/master/postinst.md#gnome-shell-extensions-tray-fix)
  - [ ] Acontece um _atraso/travamento_ quando eu uso o comando `xdotool key` nos _gestos_ do mouse.
 
+ ![Atom](https://github.com/rauldipeas/ubuntu-postinst/raw/master/icons/atom.svg?sanitize=true)
  **Em desenvolvimento:**
 
 ![xfce](https://github.com/rauldipeas/ubuntu-postinst/raw/master/icons/desktop-environment-xfce.svg?sanitize=true)
