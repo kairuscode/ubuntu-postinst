@@ -27,3 +27,7 @@ _**Cockos REAPER**_...
  - [x] ~~Não sei como importar automaticamente as configurações do _**Dash-to-panel**_.~~ [**#import-fix**](https://github.com/rauldipeas/ubuntu-postinst/blob/master/extras.md#temas-import-fix)
  - [x] ~~Não encontrei uma _extensão_ do _**GNOME**_ que me permita fazer um ajuste fino nos ícones da _área de notificação_, gostaria de _diminuir o tamanho_ e o _espaçamento_ dos ícones, testei algumas, mas nenhuma funcionou.~~ [**#tray-fix**](https://github.com/rauldipeas/ubuntu-postinst/blob/master/postinst.md#gnome-shell-extensions-tray-fix)
  - [ ] Acontece um _atraso/travamento_ quando eu uso o comando `xdotool key` nos _gestos_ do mouse.
+
+**Em desenvolvimento:**
+  - [Desktop _**alternativo**_ com **XFCE**](https://github.com/rauldipeas/ubuntu-postinst/blob/master/flavours-lab/xfce-postinst.md)
+  ![XFCE](https://github.com/rauldipeas/ubuntu-postinst/raw/master/flavours-lab/XFCE.png)
