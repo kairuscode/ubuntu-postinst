@@ -125,9 +125,10 @@ sudo usermod -aG audio $USER
 sudo usermod -aG video $USER
 echo jackd2 jackd/tweak_rt_limits string true | sudo debconf-set-selections
 sudo add-apt-repository -y ppa:ubuntustudio-ppa/backports
-sudo apt install -y --no-install-recommends ubuntustudio-controls patchage
+sudo apt install -y --no-install-recommends laditools ubuntustudio-controls patchage
 sudo apt install -y carla
 sudo sed -i 's/256/224/g' /usr/share/ubuntustudio-controls/ubuntustudio-controls.glade
+sudo rm -rfv /usr/share/applications/ladi-control-center.desktop /usr/share/applications/ladi-player.desktop /usr/share/applications/ladi-system-log.desktop
 ```
  - ### REAPER
 ```bash
