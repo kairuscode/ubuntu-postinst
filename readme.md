@@ -31,6 +31,6 @@ Primeiro eu executo os comandos indicados no arquivo [**postinst.md**](https://g
 
 ![Atom](https://github.com/rauldipeas/ubuntu-postinst/raw/master/icons/atom.svg?sanitize=true) **Em desenvolvimento:**
 
-![xfce](https://github.com/rauldipeas/ubuntu-postinst/raw/master/icons/desktop-environment-xfce.svg?sanitize=true)
+![xfce](https://github.com/rauldipeas/ubuntu-postinst/raw/master/icons/desktop-environment-xfce.svg?sanitize=true){:target="_blank"}
  [Desktop _**alternativo**_ com **XFCE**](https://github.com/rauldipeas/ubuntu-postinst/blob/master/flavours-lab/xfce-postinst.md)
 ![XFCE](https://github.com/rauldipeas/ubuntu-postinst/raw/master/flavours-lab/XFCE.png)
