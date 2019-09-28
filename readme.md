@@ -6,7 +6,7 @@ Primeiro eu executo os comandos indicados no arquivo [**postinst.md**](https://g
 
 **Aviso**: _os comandos indicados devem ser executados 1 de cada vez, para garantir que não hajam erros._
 
-![Ubuntu](https://github.com/rauldipeas/ubuntu-postinst/raw/master/icons/ubuntu.svg?sanitize=true) Algumas imagens _**ilustrativas**_ de como ficou o meu desktop:
+![Ubuntu](https://github.com/rauldipeas/ubuntu-postinst/raw/master/icons/distributor-logo-ubuntu.svg?sanitize=true) Algumas imagens _**ilustrativas**_ de como ficou o meu desktop:
 ![screenshot](https://github.com/rauldipeas/ubuntu-postinst/raw/master/screenshot.png)
 
 ![Steam](https://github.com/rauldipeas/ubuntu-postinst/raw/master/icons/steam.svg?sanitize=true)_**Jogos**_...
