@@ -30,4 +30,4 @@ _**Cockos REAPER**_...
 
 **Em desenvolvimento:**
   - [Desktop _**alternativo**_ com **XFCE**](https://github.com/rauldipeas/ubuntu-postinst/blob/master/flavours-lab/xfce-postinst.md)
-  ![XFCE](https://github.com/rauldipeas/ubuntu-postinst/raw/master/flavours-lab/XFCE.png)
+![XFCE](https://github.com/rauldipeas/ubuntu-postinst/raw/master/flavours-lab/XFCE.png)
