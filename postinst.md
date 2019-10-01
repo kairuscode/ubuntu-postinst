@@ -129,6 +129,7 @@ sudo apt install -y --no-install-recommends laditools ubuntustudio-controls patc
 sudo apt install -y carla
 sudo sed -i 's/256/224/g' /usr/share/ubuntustudio-controls/ubuntustudio-controls.glade
 sudo rm -rfv /usr/share/applications/ladi-control-center.desktop /usr/share/applications/ladi-player.desktop /usr/share/applications/ladi-system-log.desktop
+sudo ln -s /usr/bin/ubuntustudio-controls /usr/local/bin/ladi-control-center -v
 mkdir -p ~/.config/autostart
 cp -rfv /usr/share/applications/ladi-system-tray.desktop ~/.config/autostart/
 ```
