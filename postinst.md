@@ -8,6 +8,8 @@ deborphan | xargs sudo apt autoremove --purge -y
 ### Liquorix
 ```bash
 sudo add-apt-repository -y ppa:damentz/liquorix
+wget -c http://mirrors.kernel.org/ubuntu/pool/main/l/linux-firmware/linux-firmware_1.182_all.deb
+sudo apt install -y ./linux-firmware*.deb
 sudo apt install -y linux-headers-liquorix-amd64 linux-image-liquorix-amd64
 sudo apt autoremove --purge -y linux*generic*
 sudo apt install -y intel-microcode iucode-tool thermald
