@@ -5,6 +5,7 @@ sudo apt update;sudo apt dist-upgrade -y
 sudo apt install -y deborphan
 deborphan | xargs sudo apt autoremove --purge -y
 ```
+<script src="https://gist.github.com/rauldipeas/a52b77f5277ce968e24a972474165a51.js"></script>
 ### Liquorix
 ```bash
 sudo add-apt-repository -y ppa:damentz/liquorix
