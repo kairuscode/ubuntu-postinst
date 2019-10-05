@@ -30,6 +30,7 @@ sudo apt install -y \
  python-compizconfig-reloaded
 mkdir -pv ~/.config/autostart
 cp -rfv /usr/share/applications/compiz-start.desktop ~/.config/autostart/
+sed -i 's/compiz ccp --replace/sh -c \"sleep 3;compiz ccp --replace\"/g' .config/autostart/compiz-start.desktop
 ```
 ### Conky
 ```bash
