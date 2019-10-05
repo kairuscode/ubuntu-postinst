@@ -14,8 +14,9 @@ cp -rfv ubuntu-postinst/flavours-lab/XFCE/compiz ~/.config/
 ```
 ### Compiz Reloaded
 ```bash
-wget -q http://download.tuxfamily.org/compiz/apt/key.pub -O- | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/compiz-reloaded.gpg
-echo "deb http://download.tuxfamily.org/compiz/debian stretch main" | sudo tee /etc/apt/sources.list.d/compiz-reloaded.list
+wget -nv https://download.opensuse.org/repositories/home:stevenpusser:compiz-reloaded-rebuilds/Debian_Testing/Release.key -O Release.key
+sudo apt-key add - < Release.key
+sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/stevenpusser:/compiz-reloaded-rebuilds/xUbuntu_17.10/ /' > /etc/apt/sources.list.d/home:stevenpusser:compiz-reloaded-rebuilds.list"
 sudo apt update
 sudo apt install -y \
  compizconfig-settings-manager \
