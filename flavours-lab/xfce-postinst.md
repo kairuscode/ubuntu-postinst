@@ -4,34 +4,39 @@ sudo add-apt-repository -y ppa:xuzhen666/dockbarx
 ```
 ### Aparência e usabilidade
 ```bash
-sudo apt install -y mugshot menulibre redshift-gtk xfce4-dockbarx-plugin xfce4-notifyd xfce4-panel xfce4-power-manager xfce4-screenshooter xfce4-session xfce4-settings xfce4-whiskermenu-plugin xfwm4 xserver-xorg-input-synaptics-hwe-18.04
+sudo apt install -y mugshot menulibre nitrogen redshift-gtk xfce4-dockbarx-plugin xfce4-notifyd xfce4-panel xfce4-power-manager xfce4-screenshooter xfce4-session xfce4-settings xfce4-whiskermenu-plugin xfwm4 xserver-xorg-input-synaptics-hwe-18.04
 sudo apt autoremove --purge -y dockbarx-applet* indicator* thunar*
 git clone https://github.com/rauldipeas/ubuntu-postinst
 cp -rfv ubuntu-postinst/flavours-lab/XFCE/gconf ~/.gconf
 cp -rfv ubuntu-postinst/flavours-lab/XFCE/volumeicon ~/.config/
 cp -rfv ubuntu-postinst/flavours-lab/XFCE/xfce4 ~/.config/
-cp -rfv ubuntu-postinst/flavours-lab/XFCE/compiz ~/.config/
+#cp -rfv ubuntu-postinst/flavours-lab/XFCE/compiz ~/.config/
+mkdir -pv ~/.config/autostart
+cp /usr/share/applications/compton.desktop ~/.config/autostart/
+sed -i 's/Exec=compton/Exec=compton -f -I 0.08 -O 0.08 --backend glx/g' ~/.config/autostart/compton.desktop
+cp /usr/share/applications/nitrogen.desktop ~/.config/autostart/
+sed -i 's/Exec=nitrogen/Exec=nitrogen --restore/g' ~/.config/autostart/nitrogen.desktop
 ```
 ### Compiz Reloaded
 ```bash
-wget -nv https://download.opensuse.org/repositories/home:stevenpusser:compiz-reloaded-rebuilds/Debian_Testing/Release.key -O Release.key
-sudo apt-key add - < Release.key
-sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/stevenpusser:/compiz-reloaded-rebuilds/xUbuntu_17.10/ /' > /etc/apt/sources.list.d/home:stevenpusser:compiz-reloaded-rebuilds.list"
-sudo apt update
-sudo apt install -y \
- compizconfig-settings-manager \
- compiz-reloaded-core \
- compiz-reloaded-gtk \
- compiz-reloaded-plugins \
- compiz-reloaded-plugins-experimental \
- compiz-reloaded plugins-extra \
- compiz-reloaded-plugins-main \
- libcompizconfig-reloaded-0 \
- libdecoration-reloaded-0 \
- python-compizconfig-reloaded
-mkdir -pv ~/.config/autostart
-cp -rfv /usr/share/applications/compiz-start.desktop ~/.config/autostart/
-sed -i 's/compiz ccp --replace/sh -c \"sleep 3;compiz ccp --replace\"/g' .config/autostart/compiz-start.desktop
+#wget -nv https://download.opensuse.org/repositories/home:stevenpusser:compiz-reloaded-rebuilds/Debian_Testing/Release.key -O Release.key
+#sudo apt-key add - < Release.key
+#sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/stevenpusser:/compiz-reloaded-rebuilds/xUbuntu_17.10/ /' > /etc/apt/sources.list.d/home:stevenpusser:compiz-reloaded-rebuilds.list"
+#sudo apt update
+#sudo apt install -y \
+# compizconfig-settings-manager \
+# compiz-reloaded-core \
+# compiz-reloaded-gtk \
+# compiz-reloaded-plugins \
+# compiz-reloaded-plugins-experimental \
+# compiz-reloaded plugins-extra \
+# compiz-reloaded-plugins-main \
+# libcompizconfig-reloaded-0 \
+# libdecoration-reloaded-0 \
+# python-compizconfig-reloaded
+#mkdir -pv ~/.config/autostart
+#cp -rfv /usr/share/applications/compiz-start.desktop ~/.config/autostart/
+#sed -i 's/compiz ccp --replace/sh -c \"sleep 3;compiz ccp --replace\"/g' .config/autostart/compiz-start.desktop
 ```
 ### Conky
 ```bash
