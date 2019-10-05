@@ -29,7 +29,7 @@ sudo apt install -y \
  libdecoration-reloaded-0 \
  python-compizconfig-reloaded
 mkdir -pv ~/.config/autostart
-cp -rfv /usr/share/applications/compiz.desktop ~/.config/autostart/
+cp -rfv /usr/share/applications/compiz-start.desktop ~/.config/autostart/
 ```
 ### Conky
 ```bash
