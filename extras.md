@@ -6,7 +6,7 @@ sudo add-apt-repository -yn ppa:dyatlov-igor/materia-theme
 sudo add-apt-repository -yn ppa:papirus/papirus
 sudo add-apt-repository -yn ppa:papirus/papirus-dev
 sudo add-apt-repository -y ppa:papirus/hardcode-tray
-sudo apt install -y breeze-cursor-theme folder-color fonts-emojione fonts-powerline gnome-tweaks hardcode-tray materia-gtk-theme materia-kde papirus-icon-theme qt5ct
+sudo apt install -y breeze-cursor-theme folder-color fonts-emojione fonts-powerline gnome-tweaks hardcode-tray materia-gtk-theme materia-kde papirus-icon-theme qt4-qtconfig qt5ct
 wget -c http://ftp.us.debian.org/debian/pool/main/f/fonts-quicksand/fonts-quicksand_0.2016-2_all.deb #update_link
 sudo apt install -y ./fonts-quicksand*.deb
 sudo sed -i 's/Roboto/Quicksand/g' /usr/share/themes/Materia*/gnome-shell/gnome-shell.css
