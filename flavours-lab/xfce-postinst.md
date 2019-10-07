@@ -102,6 +102,11 @@ Terminal=false
 Hidden=false
 Icon=mouse' > ~/.config/autostart/palmdetection.desktop
 ```
+### qView
+```bash
+sudo add-apt-repository -y ppa:jurplel/qview
+sudo apt install qview
+```
 ### Volume icon
 ```bash
 sudo apt install -y volumeicon-alsa
