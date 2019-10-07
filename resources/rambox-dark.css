@@ -1,0 +1,16 @@
+/**
+ * Dark background
+ */
+.x-tab {
+  background-color: #383838
+}
+.x-tab:hover {
+  background-color: #484848
+}
+.x-tab-bar-body {
+  background-color: #383838
+}
+.x-tab.x-tab-active.x-tab-default {
+  border-color: white;
+  background-color: #484848
+}

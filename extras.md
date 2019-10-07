@@ -93,6 +93,9 @@ wget -c https://github.com/AppImage/appimaged/releases/download/continuous/appim
 sudo apt install -y ./appimaged*.deb
 sudo cp -v /usr/share/applications/appimaged.desktop /etc/xdg/autostart/
 ```
+### AsarUI
+wget -c https://github.com/myazarc/AsarUI/releases/download/v1.0.2/asarui_1.0.2_amd64.deb
+sudo apt install -y ./asarui*.deb
 ### Crow Translate
 ```bash
 wget -c https://github.com/crow-translate/crow-translate/releases/download/2.2.0/crow-translate-2.2.0-amd64.deb #update_link
