@@ -17,6 +17,7 @@ cp -rfv ubuntu-postinst/flavours-lab/XFCE/blur-panel-wallpapers/* ~/Images/Wallp
 mkdir -pv ~/.config/autostart
 cp /usr/share/applications/compton.desktop ~/.config/autostart/
 sed -i 's/Exec=compton/Exec=compton -f -I 0.08 -O 0.08 --backend glx/g' ~/.config/autostart/compton.desktop
+echo 'OnlyShowIn=XFCE;' | tee -a ~/.config/autostart/compton.desktop 
 sed -i 's/TryExec/#TryExec/g' ~/.config/autostart/compton.desktop
 cp /usr/share/applications/nitrogen.desktop ~/.config/autostart/
 sed -i 's/Exec=nitrogen/Exec=nitrogen --restore/g' ~/.config/autostart/nitrogen.desktop
