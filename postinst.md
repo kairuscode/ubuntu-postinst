@@ -202,6 +202,7 @@ sudo apt install -y ./ffmulticonverter*rauldipeas*.deb ocl-icd-libopencl1
 wget -c https:// #LINK_DO_DAVINCI_RESOLVE
 unzip DaVinci_Resolve*.zip;./DaVinci_Resolve*Linux.run
 echo 'StartupWMClass=resolve' | sudo tee -a /usr/share/applications/com.blackmagicdesign.resolve.desktop
+echo 'Categories=AudioVideo;' | sudo tee -a /usr/share/applications/com.blackmagicdesign.resolve.desktop
 sudo rm -rfv /usr/share/applications/com.blackmagicdesign.resolve-*.desktop
 ```
 
