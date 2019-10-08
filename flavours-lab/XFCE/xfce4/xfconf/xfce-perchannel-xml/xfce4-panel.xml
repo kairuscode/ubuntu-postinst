@@ -4,19 +4,8 @@
   <property name="configver" type="int" value="2"/>
   <property name="panels" type="array">
     <value type="int" value="1"/>
+    <value type="int" value="2"/>
     <property name="panel-1" type="empty">
-      <property name="position" type="string" value="p=8;x=960;y=1064"/>
-      <property name="length" type="uint" value="100"/>
-      <property name="position-locked" type="bool" value="true"/>
-      <property name="size" type="uint" value="48"/>
-      <property name="plugin-ids" type="array">
-        <value type="int" value="9"/>
-        <value type="int" value="1"/>
-        <value type="int" value="8"/>
-        <value type="int" value="6"/>
-        <value type="int" value="5"/>
-      </property>
-      <property name="background-style" type="uint" value="1"/>
       <property name="background-alpha" type="uint" value="100"/>
       <property name="background-color" type="array">
         <value type="uint" value="0"/>
@@ -24,33 +13,103 @@
         <value type="uint" value="0"/>
         <value type="uint" value="65535"/>
       </property>
+      <property name="background-image" type="string" value="/home/rauldipeas/Imagens/Wallpapers/panel-blur.png"/>
+      <property name="background-style" type="uint" value="1"/>
+      <property name="length" type="uint" value="100"/>
       <property name="nrows" type="uint" value="1"/>
+      <property name="plugin-ids" type="array">
+        <value type="int" value="9"/>
+        <value type="int" value="2"/>
+        <value type="int" value="1"/>
+        <value type="int" value="6"/>
+        <value type="int" value="5"/>
+      </property>
+      <property name="position" type="string" value="p=8;x=960;y=1065"/>
+      <property name="position-locked" type="bool" value="true"/>
+      <property name="size" type="uint" value="48"/>
+    </property>
+    <property name="panel-2" type="empty">
+      <property name="autohide-behavior" type="uint" value="2"/>
+      <property name="background-alpha" type="uint" value="100"/>
+      <property name="background-color" type="array">
+        <value type="uint" value="14392"/>
+        <value type="uint" value="14392"/>
+        <value type="uint" value="14392"/>
+        <value type="uint" value="65535"/>
+      </property>
+      <property name="background-style" type="uint" value="1"/>
+      <property name="length" type="uint" value="100"/>
+      <property name="plugin-ids" type="array">
+        <value type="int" value="4"/>
+        <value type="int" value="3"/>
+      </property>
+      <property name="position" type="string" value="p=9;x=967;y=25"/>
+      <property name="position-locked" type="bool" value="true"/>
+      <property name="size" type="uint" value="30"/>
     </property>
   </property>
   <property name="plugins" type="empty">
+    <property name="plugin-1" type="string" value="separator">
+      <property name="expand" type="bool" value="true"/>
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-2" type="string" value="dockbarx"/>
+    <property name="plugin-3" type="string" value="appmenu">
+      <property name="plugins" type="empty">
+        <property name="plugin-3" type="empty">
+          <property name="bold-application-name" type="bool" value="true"/>
+          <property name="compact-mode" type="bool" value="false"/>
+          <property name="expand" type="bool" value="false"/>
+        </property>
+      </property>
+      <property name="orient" type="string" value="top"/>
+    </property>
+    <property name="plugin-4" type="string" value="windowmenu">
+      <property name="urgentcy-notification" type="bool" value="true"/>
+      <property name="workspace-actions" type="bool" value="false"/>
+      <property name="workspace-names" type="bool" value="true"/>
+    </property>
     <property name="plugin-5" type="string" value="clock">
       <property name="digital-format" type="string" value="&lt;b&gt; %A, %d de %B    %R &lt;/b&gt;"/>
       <property name="tooltip-format" type="string" value=""/>
     </property>
     <property name="plugin-6" type="string" value="systray">
-      <property name="names-visible" type="array">
-      </property>
       <property name="names-ordered" type="array">
         <value type="string" value="update-notifier"/>
         <value type="string" value="miniaplicativo gerenciador de redes"/>
         <value type="string" value="diodon"/>
       </property>
-      <property name="size-max" type="uint" value="24"/>
+      <property name="names-visible" type="array">
+        <value type="string" value="obs"/>
+        <value type="string" value="caffeine-indicator"/>
+        <value type="string" value="diodon"/>
+        <value type="string" value="thunar"/>
+        <value type="string" value="redshift-gtk"/>
+        <value type="string" value="my-weather-indicator"/>
+        <value type="string" value="megasync"/>
+        <value type="string" value="gerenciador de tarefas"/>
+        <value type="string" value="rede"/>
+        <value type="string" value="steam"/>
+        <value type="string" value="miniaplicativo gerenciador de redes"/>
+        <value type="string" value="volumeicon"/>
+        <value type="string" value="ferramenta de cópia de segurança déjà dup"/>
+        <value type="string" value="qjackctl"/>
+        <value type="string" value="ibus-ui-gtk3"/>
+        <value type="string" value="crow translate"/>
+        <value type="string" value="deluge"/>
+        <value type="string" value="update-notifier"/>
+        <value type="string" value="xfce4-power-manager"/>
+        <value type="string" value="teamviewer"/>
+        <value type="string" value="dropbox"/>
+        <value type="string" value="painel ibus"/>
+        <value type="string" value="rambox"/>
+        <value type="string" value="stacer"/>
+        <value type="string" value="ladi-system-tray"/>
+        <value type="string" value="stremio"/>
+      </property>
       <property name="show-frame" type="bool" value="false"/>
-    </property>
-    <property name="plugin-8" type="string" value="dockbarx">
-      <property name="expand" type="bool" value="true"/>
-      <property name="block-autohide" type="bool" value="false"/>
+      <property name="size-max" type="uint" value="24"/>
     </property>
     <property name="plugin-9" type="string" value="whiskermenu"/>
-    <property name="plugin-1" type="string" value="separator">
-      <property name="style" type="uint" value="0"/>
-      <property name="expand" type="bool" value="false"/>
-    </property>
   </property>
 </channel>

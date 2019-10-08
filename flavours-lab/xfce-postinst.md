@@ -4,15 +4,18 @@ sudo add-apt-repository -y ppa:xuzhen666/dockbarx
 ```
 ### Aparência e usabilidade
 ```bash
-sudo apt install -y mugshot menulibre nitrogen redshift-gtk ristretto xfce4-dockbarx-plugin xfce4-notifyd xfce4-panel xfce4-power-manager xfce4-session xfce4-settings xfce4-whiskermenu-plugin xfwm4 xserver-xorg-input-synaptics-hwe-18.04
+sudo apt install -y menulibre mugshot nitrogen redshift-gtk ristretto xfce4-appmenu-plugin xfce4-dockbarx-plugin xfce4-notifyd xfce4-panel xfce4-power-manager xfce4-session xfce4-settings xfce4-whiskermenu-plugin xfpanel-switch xfwm4 xserver-xorg-input-synaptics-hwe-18.04
 sudo apt autoremove --purge -y dockbarx-applet* eog indicator* thunar*
+sudo rm -rfv /usr/share/xfpanel-switch/layouts/*
 git clone https://github.com/rauldipeas/ubuntu-postinst
-mkdir -pv ~/.config
+mkdir -pv ~/.config ~/.local/share
+cp -rfv ubuntu-postinst/flavours-lab/XFCE/compton.conf ~/.config/
 cp -rfv ubuntu-postinst/flavours-lab/XFCE/gconf ~/.gconf
 cp -rfv ubuntu-postinst/flavours-lab/XFCE/volumeicon ~/.config/
 cp -rfv ubuntu-postinst/flavours-lab/XFCE/xfce4 ~/.config/
-mkdir -pv ~/Imagens/Wallpapers/blur-panel
-cp -rfv ubuntu-postinst/flavours-lab/XFCE/blur-panel-wallpapers/* ~/Images/Wallpapers/blur-panel/
+cp -rfv ubuntu-postinst/flavours-lab/XFCE/xfpanel-switch ~/.local/share/
+mkdir -pv ~/Imagens/Wallpapers/
+cp -rfv ubuntu-postinst/flavours-lab/XFCE/wallpapers/* ~/Images/Wallpapers/
 #cp -rfv ubuntu-postinst/flavours-lab/XFCE/compiz ~/.config/
 mkdir -pv ~/.config/autostart
 cp /usr/share/applications/compton.desktop ~/.config/autostart/
@@ -34,9 +37,9 @@ view=icon
 recurse=true
 sort=alpha
 icon_caps=false
-dirs=$HOME/Imagens/Wallpapers/blur-panel;" > ~/.config/nitrogen/nitrogen.cfg
+dirs=$HOME/Imagens/Wallpapers;" > ~/.config/nitrogen/nitrogen.cfg
 echo "[xin_-1]
-file=$HOME/Imagens/Wallpapers/blur-panel/29d9e93e8012110e2b0d50c6b39f732d - blur-panel.jpg
+file=$HOME/Imagens/Wallpapers/29d9e93e8012110e2b0d50c6b39f732d.jpg
 mode=4
 bgcolor=#000000" > ~/.config/nitrogen/bg-saved.cfg
 ```
