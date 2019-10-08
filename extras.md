@@ -10,6 +10,7 @@ sudo apt install -y breeze-cursor-theme folder-color fonts-emojione fonts-powerl
 wget -c http://ftp.us.debian.org/debian/pool/main/f/fonts-quicksand/fonts-quicksand_0.2016-2_all.deb #update_link
 sudo apt install -y ./fonts-quicksand*.deb
 sudo sed -i 's/Roboto/Quicksand/g' /usr/share/themes/Materia*/gnome-shell/gnome-shell.css
+echo DPkg::Post-Invoke \{\"sed -i \'s/Roboto/Quicksand/g\' /usr/share/themes/Materia*/gnome-shell/gnome-shell.css\"\;\}\; | sudo tee /etc/apt/apt.conf.d/100materia-quicksand
 sudo sed -i 's/Icon=\/usr\/share\/pixmaps\/guvcview\/guvcview.png/Icon=guvcview/g' /usr/share/applications/guvcview.desktop
 sudo sed -i 's/Icon=\/opt\/resolve\/graphics\/DV_Resolve.png/Icon=resolve/g' /usr/share/applications/com.blackmagicdesign.resolve.desktop
 sudo sed -i 's/ubuntu-dock@ubuntu.com//g' /usr/share/gnome-shell/modes/ubuntu.json
