@@ -64,6 +64,7 @@ sudo cp -v ubuntu-logo.png /usr/share/plymouth/themes/ubuntu-logo/ubuntu-logo.pn
 ```bash
 sudo sed -i 's/quiet splash/quiet splash loglevel=0 logo.nologo vt.global_cursor_default=0 mitigations=off/g' /etc/default/grub
 sudo sed -i 's/44,0,30,0/00,0,00,0/g' /usr/share/plymouth/themes/default.grub
+echo DPkg::Post-Invoke \{\"sed -i 's/44,0,30,0/00,0,00,0/g' /usr/share/plymouth/themes/default.grub\"\;\}\; | sudo tee -a /etc/apt/apt.conf.d/100grub-dark
 echo 'options nvidia-drm modeset=1' |sudo tee /lib/modprobe.d/nvidia-drm.conf
 echo 'RESUME=none' | sudo tee /etc/initramfs-tools/conf.d/resume
 echo 'FRAMEBUFFER=y' | sudo tee /etc/initramfs-tools/conf.d/splash
