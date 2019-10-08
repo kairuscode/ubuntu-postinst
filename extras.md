@@ -197,7 +197,7 @@ sudo apt autoremove --purge -y gnome-terminal
 sudo rm -rfv /usr/share/applications/caffeine.desktop /usr/share/applications/debian-*xterm.desktop /usr/share/applications/guidus.desktop
 sudo sed -i 's/Icon=\/usr\/share\/pixmaps\/gnome-alsamixer\/gnome-alsamixer-icon.png/Icon=gnome-alsamixer-icon/g' /usr/share/applications/gnome-alsamixer.desktop
 sudo sed -i 's/Icon=\/usr\/share\/hardinfo\/pixmaps\/logo.png/Icon=hardinfo/g' /usr/share/applications/hardinfo.desktop
-echo DPkg::Post-Invoke \{\"sed -i s/Icon=\\/usr\\/share\\/hardinfo\\/pixmaps\\/logo.png/Icon=hardinfo/g\' /usr/share/applications/hardinfo.desktop\"\;\}\; | sudo tee /etc/apt/apt.conf.d/100hardinfo
+echo DPkg::Post-Invoke \{\"sed -i \'s/Icon=\\/usr\\/share\\/hardinfo\\/pixmaps\\/logo.png/Icon=hardinfo/g\' /usr/share/applications/hardinfo.desktop\"\;\}\; | sudo tee /etc/apt/apt.conf.d/100hardinfo
 sudo update-alternatives --set x-cursor-theme /etc/X11/cursors/Breeze_Snow.theme
 sudo update-alternatives --set x-terminal-emulator /usr/bin/tilix.wrapper
 sudo wget -cO /usr/local/bin/neofetch https://raw.githubusercontent.com/dylanaraps/neofetch/master/neofetch
