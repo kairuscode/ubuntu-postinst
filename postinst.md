@@ -64,7 +64,7 @@ sudo cp -v ubuntu-logo.png /usr/share/plymouth/themes/ubuntu-logo/ubuntu-logo.pn
 ```bash
 sudo sed -i 's/quiet splash/quiet splash loglevel=0 logo.nologo vt.global_cursor_default=0 mitigations=off/g' /etc/default/grub
 sudo sed -i 's/44,0,30,0/00,0,00,0/g' /usr/share/plymouth/themes/default.grub
-echo DPkg::Post-Invoke \{\"sed -i 's/44,0,30,0/00,0,00,0/g' /usr/share/plymouth/themes/default.grub\"\;\}\; | sudo tee -a /etc/apt/apt.conf.d/100grub-dark
+echo DPkg::Post-Invoke \{\"sed -i \'s/44,0,30,0/00,0,00,0/g\' /usr/share/plymouth/themes/default.grub\"\;\}\; | sudo tee -a /etc/apt/apt.conf.d/100grub-dark
 echo 'options nvidia-drm modeset=1' |sudo tee /lib/modprobe.d/nvidia-drm.conf
 echo 'RESUME=none' | sudo tee /etc/initramfs-tools/conf.d/resume
 echo 'FRAMEBUFFER=y' | sudo tee /etc/initramfs-tools/conf.d/splash
@@ -74,7 +74,7 @@ sudo update-grub
 ### GDM
 ```bash
 sudo sed -i 's/2c001e/000000/g' /usr/share/gnome-shell/theme/ubuntu.css
-echo DPkg::Post-Invoke \{\"sed -i 's/2c001e/000000/g' /usr/share/gnome-shell/theme/ubuntu.css\"\;\}\; | sudo tee /etc/apt/apt.conf.d/100gdm-dark
+echo DPkg::Post-Invoke \{\"sed -i \'s/2c001e/000000/g\' /usr/share/gnome-shell/theme/ubuntu.css\"\;\}\; | sudo tee /etc/apt/apt.conf.d/100gdm-dark
 ```
 ### GNOME Shell Extensions #tray-fix
 ```bash
@@ -132,14 +132,14 @@ sudo add-apt-repository -y ppa:ubuntustudio-ppa/backports
 sudo apt install -y --no-install-recommends laditools ubuntustudio-controls patchage
 sudo apt install -y carla
 sudo sed -i 's/256/224/g' /usr/share/ubuntustudio-controls/ubuntustudio-controls.glade
-echo DPkg::Post-Invoke \{\"sed -i 's/256/224/g' /usr/share/ubuntustudio-controls/ubuntustudio-controls.glade\"\;\}\; | sudo tee -a /etc/apt/apt.conf.d/100ubuntustudio-controls
+echo DPkg::Post-Invoke \{\"sed -i \'s/256/224/g\' /usr/share/ubuntustudio-controls/ubuntustudio-controls.glade\"\;\}\; | sudo tee -a /etc/apt/apt.conf.d/100ubuntustudio-controls
 sudo rm -rfv /usr/share/applications/ladi-control-center.desktop /usr/share/applications/ladi-player.desktop /usr/share/applications/ladi-system-log.desktop
 echo '#!/bin/bash
 ubuntustudio-controls' | sudo tee /usr/local/bin/ladi-control-center
 sudo chmod +x /usr/local/bin/ladi-control-center
 mkdir -p ~/.config/autostart
 cp -rfv /usr/share/applications/ladi-system-tray.desktop ~/.config/autostart/
-echo 'DPkg::Post-Invoke {"find /usr/share/icons/Papirus* -type f -name ladi* -exec sed -i s/4285f4/4e9a06/g {} \;";};' | sudo tee /etc/apt/apt.conf.d/100laditray-papirus
+echo DPkg::Post-Invoke \{\"find /usr/share/icons/Papirus* -type f -name ladi* -exec sed -i \'s/4285f4/4e9a06/g\' {} \\\;\"\;\}\; | sudo tee /etc/apt/apt.conf.d/100laditray-papirus
 #echo '#!/bin/sh -e
 #find /usr/share/icons/Papirus* -type f -name ladi* -exec sed -i 's/4285f4/4e9a06/g' {} \;' | sudo tee /etc/rc.local
 #sudo chmod +x -v /etc/rc.local
