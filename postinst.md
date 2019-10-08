@@ -73,7 +73,7 @@ sudo update-grub
 ### GDM
 ```bash
 sudo sed -i 's/2c001e/000000/g' /usr/share/gnome-shell/theme/ubuntu.css
-echo DPkg::Post-Invoke \{"sed -i 's/2c001e/000000/g' /usr/share/gnome-shell/theme/ubuntu.css"\;\}\; | sudo tee /etc/apt/apt.conf.d/100gdm-dark
+echo DPkg::Post-Invoke \{\"sed -i 's/2c001e/000000/g' /usr/share/gnome-shell/theme/ubuntu.css\"\;\}\; | sudo tee /etc/apt/apt.conf.d/100gdm-dark
 ```
 ### GNOME Shell Extensions #tray-fix
 ```bash
