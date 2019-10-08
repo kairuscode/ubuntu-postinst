@@ -73,6 +73,7 @@ sudo update-grub
 ### GDM
 ```bash
 sudo sed -i 's/2c001e/000000/g' /usr/share/gnome-shell/theme/ubuntu.css
+echo DPkg::Post-Invoke \{"sed -i 's/2c001e/000000/g' /usr/share/gnome-shell/theme/ubuntu.css"\;\}\; | sudo tee /etc/apt/apt.conf.d/100gdm-dark
 ```
 ### GNOME Shell Extensions #tray-fix
 ```bash
@@ -136,9 +137,10 @@ ubuntustudio-controls' | sudo tee /usr/local/bin/ladi-control-center
 sudo chmod +x /usr/local/bin/ladi-control-center
 mkdir -p ~/.config/autostart
 cp -rfv /usr/share/applications/ladi-system-tray.desktop ~/.config/autostart/
-echo '#!/bin/sh -e
-find /usr/share/icons/Papirus* -type f -name ladi* -exec sed -i 's/4285f4/4e9a06/g' {} \;' | sudo tee /etc/rc.local
-sudo chmod +x -v /etc/rc.local
+echo 'DPkg::Post-Invoke {"find /usr/share/icons/Papirus* -type f -name ladi* -exec sed -i s/4285f4/4e9a06/g {} \;";};' | sudo tee /etc/apt/apt.conf.d/100laditray-papirus
+#echo '#!/bin/sh -e
+#find /usr/share/icons/Papirus* -type f -name ladi* -exec sed -i 's/4285f4/4e9a06/g' {} \;' | sudo tee /etc/rc.local
+#sudo chmod +x -v /etc/rc.local
 ```
  - ### REAPER
 ```bash
