@@ -132,7 +132,7 @@ sudo add-apt-repository -y ppa:ubuntustudio-ppa/backports
 sudo apt install -y --no-install-recommends laditools ubuntustudio-controls patchage
 sudo apt install -y carla
 sudo sed -i 's/256/224/g' /usr/share/ubuntustudio-controls/ubuntustudio-controls.glade
-echo DPkg::Post-Invoke \{\"sed -i \'s/256/224/g\' /usr/share/ubuntustudio-controls/ubuntustudio-controls.glade\"\;\}\; | sudo tee -a /etc/apt/apt.conf.d/100ubuntustudio-controls
+echo DPkg::Post-Invoke \{\"sed -i \'s/256/224/g\' /usr/share/ubuntustudio-controls/ubuntustudio-controls.glade\"\;\}\; | sudo tee /etc/apt/apt.conf.d/100ubuntustudio-controls
 sudo rm -rfv /usr/share/applications/ladi-control-center.desktop /usr/share/applications/ladi-player.desktop /usr/share/applications/ladi-system-log.desktop
 echo '#!/bin/bash
 ubuntustudio-controls' | sudo tee /usr/local/bin/ladi-control-center
