@@ -51,7 +51,7 @@ cd grub2-themes;sudo ./install.sh -l;cd ..
 ### GDM
 ```bash
 sudo sed -i 's/Ubuntu/Quicksand/g' /usr/share/gnome-shell/theme/ubuntu.css
-echo DPkg::Post-Invoke \{\"sed -i 's/Ubuntu/Quicksand/g' /usr/share/gnome-shell/theme/ubuntu.css\"\;\}\; | sudo tee -a /etc/apt/apt.conf.d/100gdm-dark
+echo DPkg::Post-Invoke \{\"sed -i \'s/Ubuntu/Quicksand/g\' /usr/share/gnome-shell/theme/ubuntu.css\"\;\}\; | sudo tee -a /etc/apt/apt.conf.d/100gdm-dark
 xhost +SI:localuser:gdm
 sudo su gdm -s /bin/bash #executar comandos abaixo como usuário GDM
 $# gsettings set org.gnome.desktop.interface gtk-theme Materia-dark-compact
