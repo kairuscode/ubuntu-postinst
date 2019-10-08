@@ -30,13 +30,13 @@
       <property name="override" type="bool" value="true"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;t" type="string" value="exo-open --launch TerminalEmulator"/>
       <property name="&lt;Super&gt;Escape" type="string" value="xfce4-popup-whiskermenu"/>
-      <property name="&lt;Alt&gt;Print" type="string" value="xfce4-screenshooter"/>
-      <property name="Print" type="string" value="xfce4-screenshooter -f"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;Delete" type="string" value="xfce4-session-logout"/>
       <property name="&lt;Alt&gt;F2" type="string" value="xfce4-popup-whiskermenu">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
       <property name="&lt;Primary&gt;&lt;Alt&gt;Escape" type="string" value="xkill"/>
+      <property name="Print" type="string" value="gnome-screenshot"/>
+      <property name="&lt;Alt&gt;Print" type="string" value="gnome-screenshot -i"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">

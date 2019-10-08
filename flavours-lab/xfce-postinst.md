@@ -4,7 +4,7 @@ sudo add-apt-repository -y ppa:xuzhen666/dockbarx
 ```
 ### Aparência e usabilidade
 ```bash
-sudo apt install -y mugshot menulibre nitrogen redshift-gtk ristretto xfce4-dockbarx-plugin xfce4-notifyd xfce4-panel xfce4-power-manager xfce4-screenshooter xfce4-session xfce4-settings xfce4-whiskermenu-plugin xfwm4 xserver-xorg-input-synaptics-hwe-18.04
+sudo apt install -y mugshot menulibre nitrogen redshift-gtk ristretto xfce4-dockbarx-plugin xfce4-notifyd xfce4-panel xfce4-power-manager xfce4-session xfce4-settings xfce4-whiskermenu-plugin xfwm4 xserver-xorg-input-synaptics-hwe-18.04
 sudo apt autoremove --purge -y dockbarx-applet* eog indicator* thunar*
 git clone https://github.com/rauldipeas/ubuntu-postinst
 mkdir -pv ~/.config
