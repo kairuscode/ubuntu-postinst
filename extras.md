@@ -82,6 +82,9 @@ notify_when_long_running_commands_finish_install' >> ~/.bashrc
 sudo sed -i 's/took/levou/g' /usr/share/undistract-me/long-running.bash
 sudo sed -i 's/dialog-information/xterm/g' /usr/share/undistract-me/long-running.bash
 sudo sed -i 's/Long\ command\ completed/Comando\ concluído\!/g' /usr/share/undistract-me/long-running.bash
+echo DPkg::Post-Invoke \{\"sed -i \'s/took/levou/g\' /usr/share/undistract-me/long-running.bash\"\;\}\; | sudo tee /etc/apt/apt.conf.d/100undistract-me
+echo DPkg::Post-Invoke \{\"sed -i \'s/dialog-information/xterm/g\' /usr/share/undistract-me/long-running.bash\"\;\}\; | sudo tee -a /etc/apt/apt.conf.d/100undistract-me
+echo DPkg::Post-Invoke \{\"sed -i \'s/Long\ command\ completed/Comando\ concluído\!/g\' /usr/share/undistract-me/long-running.bash\"\;\}\; | sudo tee -a /etc/apt/apt.conf.d/100undistract-me
 sudo su #executar comandos abaixo como usuário root
 $# chsh -s `which fish`
 $# curl -L https://get.oh-my.fish | fish
