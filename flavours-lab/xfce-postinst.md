@@ -123,6 +123,11 @@ Exec=volumeicon
 NoDisplay=false
 OnlyShowIn=XFCE;' > ~/.config/autostart/volumeicon.desktop
 ```
+### WindowCK
+```bash
+wget -c https://github.com/rauldipeas/ubuntu-postinst/raw/master/resources/xfce4-windowck-plugin_0.4.5_amd64.deb
+sudo apt install -y ./xfce4-windowck-plugin*.deb
+```
 ### XCAPE
 ```bash
 sudo apt install -y xcape
