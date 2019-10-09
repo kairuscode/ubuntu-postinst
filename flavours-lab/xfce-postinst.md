@@ -8,9 +8,9 @@ sudo apt install -y compton gtk3-nocsd menulibre mugshot nitrogen redshift-gtk r
 sudo apt autoremove --purge -y dockbarx-applet* eog indicator* thunar*
 sudo rm -rfv /usr/share/xfpanel-switch/layouts/*
 git clone https://github.com/rauldipeas/ubuntu-postinst
+gconftool --load ubuntu-postinst/flavours-lab/XFCE/dockbarx.xml
 mkdir -pv ~/.config ~/.local/share
 cp -rfv ubuntu-postinst/flavours-lab/XFCE/compton.conf ~/.config/
-cp -rfv ubuntu-postinst/flavours-lab/XFCE/gconf ~/.gconf
 cp -rfv ubuntu-postinst/flavours-lab/XFCE/volumeicon ~/.config/
 cp -rfv ubuntu-postinst/flavours-lab/XFCE/xfce4 ~/.config/
 cp -rfv ubuntu-postinst/flavours-lab/XFCE/xfpanel-switch ~/.local/share/
