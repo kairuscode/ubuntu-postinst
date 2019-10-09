@@ -1,7 +1,7 @@
 favorites=exo-terminal-emulator.desktop,exo-file-manager.desktop,exo-mail-reader.desktop,exo-web-browser.desktop
 recent=xfpanel-switch.desktop,xfce-wm-settings.desktop,org.gnome.Software.desktop,github-desktop.desktop,nitrogen.desktop,compton.desktop,inkscape.desktop,gnome-alsamixer.desktop,firefox.desktop,panel-preferences.desktop,gedit.desktop,xfce4-session-logout.desktop,diodon.desktop,conky-manager.desktop,deluge.desktop
 button-title=Aplicações
-button-icon=ubuntu
+button-icon=distributor-logo
 button-single-row=false
 show-button-title=false
 show-button-icon=true
@@ -65,4 +65,3 @@ name=Abrir URI
 pattern=^(file|http|https):\\/\\/(.*)$
 command=exo-open \\0
 regex=true
-
