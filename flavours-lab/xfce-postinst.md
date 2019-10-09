@@ -4,7 +4,7 @@ sudo add-apt-repository -y ppa:xuzhen666/dockbarx
 ```
 ### Aparência e usabilidade
 ```bash
-sudo apt install -y gtk3-nocsd menulibre mugshot nitrogen redshift-gtk ristretto xfce4-appmenu-plugin xfce4-dockbarx-plugin xfce4-notifyd xfce4-panel xfce4-power-manager xfce4-session xfce4-settings xfce4-whiskermenu-plugin xfpanel-switch xfwm4 xserver-xorg-input-synaptics-hwe-18.04
+sudo apt install -y compton gtk3-nocsd menulibre mugshot nitrogen redshift-gtk ristretto xfce4-appmenu-plugin xfce4-dockbarx-plugin xfce4-notifyd xfce4-panel xfce4-power-manager xfce4-session xfce4-settings xfce4-whiskermenu-plugin xfpanel-switch xfwm4 xserver-xorg-input-synaptics-hwe-18.04
 sudo apt autoremove --purge -y dockbarx-applet* eog indicator* thunar*
 sudo rm -rfv /usr/share/xfpanel-switch/layouts/*
 git clone https://github.com/rauldipeas/ubuntu-postinst
@@ -15,11 +15,11 @@ cp -rfv ubuntu-postinst/flavours-lab/XFCE/volumeicon ~/.config/
 cp -rfv ubuntu-postinst/flavours-lab/XFCE/xfce4 ~/.config/
 cp -rfv ubuntu-postinst/flavours-lab/XFCE/xfpanel-switch ~/.local/share/
 mkdir -pv ~/Imagens/Wallpapers/
-cp -rfv ubuntu-postinst/flavours-lab/XFCE/wallpapers/* ~/Images/Wallpapers/
+cp -rfv ubuntu-postinst/flavours-lab/XFCE/wallpapers/* ~/Imagens/Wallpapers/
 #cp -rfv ubuntu-postinst/flavours-lab/XFCE/compiz ~/.config/
 mkdir -pv ~/.config/autostart
 cp /usr/share/applications/compton.desktop ~/.config/autostart/
-sed -i 's/Exec=compton/Exec=compton -f -I 0.08 -O 0.08 --backend glx/g' ~/.config/autostart/compton.desktop
+#sed -i 's/Exec=compton/Exec=compton -f -I 0.08 -O 0.08 --backend glx/g' ~/.config/autostart/compton.desktop
 echo 'OnlyShowIn=XFCE;' | tee -a ~/.config/autostart/compton.desktop
 sed -i 's/TryExec/#TryExec/g' ~/.config/autostart/compton.desktop
 cp /usr/share/applications/nitrogen.desktop ~/.config/autostart/
@@ -142,6 +142,7 @@ OnlyShowIn=XFCE;' > ~/.config/autostart/xcape.desktop
 ```bash
 sudo wget -cO /usr/local/bin/xfce4-panel-auto-opaque https://gist.githubusercontent.com/5310/1033619bd0c9a14a53c4c3fec82a903a/raw/ea0880927a13e7c2ea128312accc2e90c6d75a01/xfce4-panel-auto-opaque.sh
 sudo sed -i 's/transparent_alpha=0/transparent_alpha=30/g' /usr/local/bin/xfce4-panel-auto-opaque
+sudo sed -i 's/panels -l/panels\/panel-1 -l/g' /usr/local/bin/xfce4-panel-auto-opaque
 sudo chmod -v +x /usr/local/bin/xfce4-panel-auto-opaque
 mkdir -p ~/.config/autostart
 echo '[Desktop Entry]
