@@ -1,5 +1,6 @@
 ### Repositórios
 ```bash
+sudo add-apt-repository -y ppa:unit193/xfce
 sudo add-apt-repository -y ppa:xuzhen666/dockbarx
 ```
 ### Aparência e usabilidade
