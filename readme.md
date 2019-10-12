@@ -39,4 +39,5 @@ _**Superbar**_
 _**Cupertino**_
 ![XFCE Cupertino](https://github.com/rauldipeas/ubuntu-postinst/raw/master/flavours-lab/XFCE-Cupertino.png)
 _**XFPanel Switch**_
+
 ![XFPanel Switch](https://github.com/rauldipeas/ubuntu-postinst/raw/master/flavours-lab/xfpanel-switch.gif)
