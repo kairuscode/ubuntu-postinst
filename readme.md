@@ -38,5 +38,5 @@ _**Superbar**_
 ![XFCE Superbar](https://github.com/rauldipeas/ubuntu-postinst/raw/master/flavours-lab/XFCE-Superbar.png)
 _**Cupertino**_
 ![XFCE Cupertino](https://github.com/rauldipeas/ubuntu-postinst/raw/master/flavours-lab/XFCE-Cupertino.png)
-_XFPanel Switcher_
-![XFPanel Switcher](https://github.com/rauldipeas/ubuntu-postinst/raw/master/flavours-lab/xfpanel-switch.png)
+_XFPanel Switch_
+![XFPanel Switch](https://github.com/rauldipeas/ubuntu-postinst/raw/master/flavours-lab/xfpanel-switch.gif)
