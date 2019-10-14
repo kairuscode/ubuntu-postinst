@@ -144,11 +144,11 @@ sudo apt install -y ./xfce4-windowck-plugin*.deb
 ```bash
 sudo apt install -y xcape
 mkdir -p ~/.config/autostart
-echo '[Desktop Entry]
-Exec=xcape -e "Super_L=Super_L|Escape"
+echo "[Desktop Entry]
+Exec=sh -c \"xcape -e 'Super_L=Super_L|Escape';xcape -e '#108=Super_L|Alt_L|Escape'\"
 Name=Xcape
 Type=Application
-OnlyShowIn=XFCE;' > ~/.config/autostart/xcape.desktop
+OnlyShowIn=XFCE;" > ~/.config/autostart/xcape.desktop
 ```
 ### XFCE panel auto opaque
 ```bash
