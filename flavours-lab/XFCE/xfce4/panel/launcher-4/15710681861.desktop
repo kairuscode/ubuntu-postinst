@@ -1,0 +1,12 @@
+[Desktop Entry]
+NotShowIn=Unity;GNOME;
+Name=Trash
+Comment=Access trash
+Exec=nautilus trash:///
+Icon=user-trash
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GNOME;GTK;Utility;Core;FileManager;
+X-GNOME-UsesNotifications=true
+X-XFCE-Source=file:///home/rauldipeas/.local/share/applications/trash.desktop
