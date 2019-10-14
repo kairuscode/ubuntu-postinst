@@ -72,6 +72,16 @@ wget -c https://github.com/teejee2008/conky-manager/releases/download/v2.4/conky
 wget -c http://launchpadlibrarian.net/340091846/realpath_8.26-3ubuntu4_all.deb
 sudo apt install -y conky-all ./conky-manager*.deb ./realpath*.deb
 ```
+### QMenu HUD
+```bash
+git clone https://github.com/tetzank/qmenu_hud;cd qmenu_hud
+mkdir build;cd build
+sudo apt install -y cmake qtbase5-dev libdbusmenu-qt5-dev suckless-tools
+cmake ..
+make
+sudo make install
+sudo apt autoremove --purge -y cmake cmake-data libjsoncpp1 librhash0 libdrm-dev libegl1-mesa-dev libgl1-mesa-dev libgles1 libgles2-mesa-dev libglu1-mesa-dev libglvnd-core-dev libglvnd-dev libopengl0 libpthread-stubs0-dev libqt5concurrent5 libqt5opengl5-dev libwayland-bin libwayland-dev libx11-dev libx11-doc libx11-xcb-dev libxau-dev libxcb-dri2-0-dev libxcb-dri3-dev libxcb-glx0-dev libxcb-present-dev libxcb-randr0-dev libxcb-render0-dev libxcb-shape0-dev libxcb-sync-dev libxcb-xfixes0-dev libxcb1-dev libxdamage-dev libxdmcp-dev libxext-dev libxfixes-dev libxshmfence-dev libxxf86vm-dev mesa-common-dev qt5-qmake qt5-qmake-bin qtbase5-dev qtbase5-dev-tools x11proto-core-dev x11proto-damage-dev x11proto-dev x11proto-fixes-dev x11proto-xext-dev x11proto-xf86vidmode-dev xorg-sgml-doctools xtrans-dev libdbusmenu-qt5-dev
+```
 ### Natural scrolling
 ```bash
 echo '#!/bin/bash
