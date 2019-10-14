@@ -41,4 +41,6 @@ _**Cupertino**_
 _**XFPanel Switch**_
 
 ![XFPanel Switch](https://github.com/rauldipeas/ubuntu-postinst/raw/master/flavours-lab/xfpanel-switch.gif)
+_**QMenu HUD**_
+
 ![QMenu HUD](https://github.com/rauldipeas/ubuntu-postinst/raw/master/flavours-lab/qmenu-hud.gif)
