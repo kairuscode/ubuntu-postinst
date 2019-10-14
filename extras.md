@@ -159,6 +159,11 @@ sudo apt install -y ./nautilus-megasync*.deb ./megasync*.deb
 wget -c https://github.com/rauldipeas/ubuntu-postinst/raw/master/resources/ocs-url_3.1.0-0ubuntu1_amd64.deb
 sudo apt install -y ./ocs-url*.deb
 ```
+### RClone Tray
+```bash
+wget -c https://github.com/dimitrov-adrian/RcloneTray/releases/download/v1.0.0/rclonetray_1.0.0_amd64.deb
+sudo apt install -y ./rclonetray*.deb
+```
 ### SpeedTest
 ```bash
 sudo wget -O /usr/local/bin/speedtest-cli https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py
