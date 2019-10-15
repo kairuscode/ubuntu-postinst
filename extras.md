@@ -61,8 +61,6 @@ $# gsettings set org.gnome.desktop.interface icon-theme Papirus-Dark
 $# gsettings set org.gnome.desktop.interface cursor-theme Breeze_Snow
 $# gsettings set org.gnome.login-screen logo '/usr/share/plymouth/themes/ubuntu-logo/ubuntu-logo.png'
 $# gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click true
-#$# gsettings set org.gnome.shell enabled-extensions "['user-theme@gnome-shell-extensions.gcampax.github.com']"
-#$# gsettings set org.gnome.shell.extensions.user-theme name Materia-dark-compact
 $# exit
 xhost -SI:localuser:gdm
 ```
@@ -142,12 +140,6 @@ echo "
 # GoTop
 alias gotop-monokai='gotop -c monokai'" >> ~/.bashrc
 ```
-### Insync
-```bash
-#wget -c https://d2t3ff60b2tol4.cloudfront.net/builds/insync-nautilus_3.0.13.40201_all.deb #update_link
-#wget -c https://d2t3ff60b2tol4.cloudfront.net/builds/insync_3.0.15.40277-bionic_amd64.deb #update_link
-#sudo apt install -y ./insync*.deb
-```
 ### MEGA
 ```bash
 wget -c https://mega.nz/linux/MEGAsync/xUbuntu_18.04/amd64/nautilus-megasync-xUbuntu_18.04_amd64.deb
@@ -191,8 +183,6 @@ sudo apt install -y --no-install-recommends ./virtualbox*.deb
 ```
 ### Webpin
 ```bash
-#wget -c https://launchpadlibrarian.net/440481065/libgranite-common_5.2.5+r1436+pkg110~ubuntu5.0.1_all.deb
-#wget -c https://launchpadlibrarian.net/440481067/libgranite5_5.2.5+r1436+pkg110~ubuntu5.0.1_amd64.deb
 wget -c https://github.com/rauldipeas/ubuntu-postinst/raw/master/resources/com.github.artemanufrij.webpin_0.2.1_amd64.deb
 sudo apt install -y ./libgranite* ./com.github.artemanufrij.webpin*.deb
 ```

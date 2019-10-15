@@ -21,7 +21,6 @@ cp -rfv ubuntu-postinst/flavours-lab/XFCE/wallpapers/* ~/Imagens/Wallpapers/
 #cp -rfv ubuntu-postinst/flavours-lab/XFCE/compiz ~/.config/
 mkdir -pv ~/.config/autostart
 cp /usr/share/applications/compton.desktop ~/.config/autostart/
-#sed -i 's/Exec=compton/Exec=compton -f -I 0.08 -O 0.08 --backend glx/g' ~/.config/autostart/compton.desktop
 echo 'OnlyShowIn=XFCE;' | tee -a ~/.config/autostart/compton.desktop
 sed -i 's/TryExec/#TryExec/g' ~/.config/autostart/compton.desktop
 cp /usr/share/applications/nitrogen.desktop ~/.config/autostart/
@@ -119,11 +118,6 @@ Terminal=false
 Hidden=false
 Icon=mouse' > ~/.config/autostart/palmdetection.desktop
 ```
-### qView
-```bash
-#sudo add-apt-repository -y ppa:jurplel/qview
-#sudo apt install qview
-```
 ### Volume icon
 ```bash
 sudo apt install -y volumeicon-alsa
@@ -169,4 +163,9 @@ StartupNotify=false
 Terminal=false
 Hidden=false
 Icon=xfce4-panel' > ~/.config/autostart/xfce4-panel-auto-opaque.desktop
+```
+### Hardcode-tray apply (XFCE)
+```bash
+sudo rm -rfv ~/.config/Hardcode-tray
+sudo hardcode-tray --apply --size 24
 ```

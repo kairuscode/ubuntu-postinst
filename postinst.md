@@ -144,9 +144,6 @@ sudo chmod +x /usr/local/bin/ladi-control-center
 mkdir -p ~/.config/autostart
 cp -rfv /usr/share/applications/ladi-system-tray.desktop ~/.config/autostart/
 echo DPkg::Post-Invoke \{\"find /usr/share/icons/Papirus* -type f -name ladi* -exec sed -i \'s/4285f4/4e9a06/g\' {} \\\;\"\;\}\; | sudo tee /etc/apt/apt.conf.d/100laditray-papirus
-#echo '#!/bin/sh -e
-#find /usr/share/icons/Papirus* -type f -name ladi* -exec sed -i 's/4285f4/4e9a06/g' {} \;' | sudo tee /etc/rc.local
-#sudo chmod +x -v /etc/rc.local
 ```
  - ### REAPER
 ```bash
