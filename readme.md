@@ -34,16 +34,16 @@ Primeiro eu executo os comandos indicados no arquivo [**postinst.md**](https://g
 ![xfce](https://github.com/rauldipeas/ubuntu-postinst/raw/master/icons/desktop-environment-xfce.svg?sanitize=true)
  [Desktop _**alternativo**_ com **XFCE**](https://github.com/rauldipeas/ubuntu-postinst/blob/master/flavours-lab/xfce-postinst.md)
 
-_**Superbar**_
+![Superbar](https://github.com/rauldipeas/ubuntu-postinst/raw/master/icons/microsoft.svg?sanitize=true) _**Superbar**_
 ![XFCE Superbar](https://github.com/rauldipeas/ubuntu-postinst/raw/master/flavours-lab/XFCE-Superbar.png)
-_**Cupertino**_
+![Cupertino](https://github.com/rauldipeas/ubuntu-postinst/raw/master/icons/folder-white-apple.svg?sanitize=true) _**Cupertino**_
 ![XFCE Cupertino](https://github.com/rauldipeas/ubuntu-postinst/raw/master/flavours-lab/XFCE-Cupertino.png)
-_**Half-Unity**_
+![Unity](https://github.com/rauldipeas/ubuntu-postinst/raw/master/icons/desktop-environment-unity.svg?sanitize=true) _**Half-Unity**_
 ![XFCE Half-Unity](https://github.com/rauldipeas/ubuntu-postinst/raw/master/flavours-lab/XFCE-Half-Unity.png)
-_**XFPanel Switch**_
+![XFPanel Switcher](https://github.com/rauldipeas/ubuntu-postinst/raw/master/icons/lookswitcher.svg?sanitize=true) _**XFPanel Switch**_
 
 ![XFPanel Switch](https://github.com/rauldipeas/ubuntu-postinst/raw/master/flavours-lab/xfpanel-switch.gif)
 
-_**QMenu HUD**_
+![QMenu HUD](https://github.com/rauldipeas/ubuntu-postinst/raw/master/icons/classicmenu-indicator.svg?sanitize=true) _**QMenu HUD**_
 
 ![QMenu HUD](https://github.com/rauldipeas/ubuntu-postinst/raw/master/flavours-lab/qmenu-hud.gif)
