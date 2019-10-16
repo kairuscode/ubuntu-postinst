@@ -1,0 +1,19 @@
+* {
+	background-color: black;
+	text-color:       white;
+	spacing:          30;
+}
+window {
+	font: "Quicksand 20";
+	fullscreen: true;
+	children: [ dummy1, hdum, dummy2 ];
+}
+
+hdum {
+	orientation: horizontal;
+	children: [ dummy3, mainbox, dummy4 ];
+}
+
+element selected {
+	text-color: #00aaff;
+}
