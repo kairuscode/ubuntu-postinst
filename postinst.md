@@ -19,7 +19,7 @@ sudo apt install -y intel-microcode iucode-tool thermald
 sudo apt autoremove --purge -yn *nvidia* *libnvidia*
 #sudo add-apt-repository -y ppa:graphics-drivers/ppa
 sudo add-apt-repository -y ppa:system76/pop
-echo deb https://packages.lunarg.com/vulkan/1.1.106 bionic main | sudo tee -a /etc/apt/sources.list.d/lunarg-vulkan-1.1.106-bionic.list
+echo deb https://packages.lunarg.com/vulkan/1.1.121 bionic main | sudo tee -a /etc/apt/sources.list.d/lunarg-vulkan-1.1.121-bionic.list
 wget -qO - http://packages.lunarg.com/lunarg-signing-key-pub.asc | sudo apt-key add -
 echo '# POP!_OS PPA
 Package: *
