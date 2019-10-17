@@ -40,6 +40,8 @@ Primeiro eu executo os comandos indicados no arquivo [**postinst.md**](https://g
 ![XFCE Cupertino](https://github.com/rauldipeas/ubuntu-postinst/raw/master/flavours-lab/XFCE-Cupertino.png)
 ![Unity](https://github.com/rauldipeas/ubuntu-postinst/raw/master/icons/desktop-environment-unity.svg?sanitize=true) _**Half-Unity**_
 ![XFCE Half-Unity](https://github.com/rauldipeas/ubuntu-postinst/raw/master/flavours-lab/XFCE-Half-Unity.png)
+![SLBR](https://github.com/rauldipeas/ubuntu-postinst/raw/master/icons/kmix.svg?sanitize=true) _**SLBR**_
+![XFCE SLBR](https://github.com/rauldipeas/ubuntu-postinst/raw/master/flavours-lab/XFCE-SLBR.png)
 ![XFPanel Switcher](https://github.com/rauldipeas/ubuntu-postinst/raw/master/icons/preferences-desktop-theme.svg?sanitize=true) _**XFPanel Switch**_
 
 ![XFPanel Switch](https://github.com/rauldipeas/ubuntu-postinst/raw/master/flavours-lab/xfpanel-switch.gif)
