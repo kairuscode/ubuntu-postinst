@@ -49,3 +49,7 @@ Primeiro eu executo os comandos indicados no arquivo [**postinst.md**](https://g
 ![QMenu HUD](https://github.com/rauldipeas/ubuntu-postinst/raw/master/icons/classicmenu-indicator.svg?sanitize=true) _**QMenu HUD**_
 
 ![QMenu HUD](https://github.com/rauldipeas/ubuntu-postinst/raw/master/flavours-lab/qmenu-hud.gif)
+
+![Rofi DRun](https://github.com/rauldipeas/ubuntu-postinst/raw/master/icons/view-list-details.svg?sanitize=true) _**QMenu HUD**_
+
+![Rofi DRun](https://github.com/rauldipeas/ubuntu-postinst/raw/master/flavours-lab/rofi-drun.png)
