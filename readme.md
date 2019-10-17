@@ -50,6 +50,6 @@ Primeiro eu executo os comandos indicados no arquivo [**postinst.md**](https://g
 
 ![QMenu HUD](https://github.com/rauldipeas/ubuntu-postinst/raw/master/flavours-lab/qmenu-hud.gif)
 
-![Rofi DRun](https://github.com/rauldipeas/ubuntu-postinst/raw/master/icons/view-list-details.svg?sanitize=true) _**Rofi DRun**_
+![Rofi DRun](https://github.com/rauldipeas/ubuntu-postinst/raw/master/icons/view-media-playlist.svg?sanitize=true) _**Rofi DRun**_
 
 ![Rofi DRun](https://github.com/rauldipeas/ubuntu-postinst/raw/master/flavours-lab/rofi-drun.png)
