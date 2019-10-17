@@ -1,12 +1,11 @@
 ### Repositórios
 ```bash
 sudo add-apt-repository -y ppa:unit193/xfce
-sudo add-apt-repository -y ppa:kelleyk/compton
 sudo add-apt-repository -y ppa:xuzhen666/dockbarx
 ```
 ### Aparência e usabilidade
 ```bash
-sudo apt install -y compton gtk3-nocsd menulibre mugshot nitrogen redshift-gtk rofi xfce4-appmenu-plugin xfce4-dockbarx-plugin xfce4-notifyd xfce4-panel xfce4-power-manager xfce4-session xfce4-settings xfce4-whiskermenu-plugin xfpanel-switch xfwm4 xscreensaver xserver-xorg-input-synaptics-hwe-18.04
+sudo apt install -y gtk3-nocsd menulibre mugshot nitrogen redshift-gtk rofi xfce4-appmenu-plugin xfce4-dockbarx-plugin xfce4-notifyd xfce4-panel xfce4-power-manager xfce4-session xfce4-settings xfce4-whiskermenu-plugin xfpanel-switch xfwm4 xscreensaver xserver-xorg-input-synaptics-hwe-18.04
 sudo apt autoremove --purge -y dockbarx-applet* indicator* thunar* xubuntu*
 sudo rm -rfv /usr/share/xfpanel-switch/layouts/*
 git clone https://github.com/rauldipeas/ubuntu-postinst
@@ -21,9 +20,6 @@ mkdir -pv ~/Imagens/Wallpapers/
 cp -rfv ubuntu-postinst/flavours-lab/XFCE/wallpapers/* ~/Imagens/Wallpapers/
 #cp -rfv ubuntu-postinst/flavours-lab/XFCE/compiz ~/.config/
 mkdir -pv ~/.config/autostart
-cp /usr/share/applications/compton.desktop ~/.config/autostart/
-echo 'OnlyShowIn=XFCE;' | tee -a ~/.config/autostart/compton.desktop
-sed -i 's/TryExec/#TryExec/g' ~/.config/autostart/compton.desktop
 cp /usr/share/applications/nitrogen.desktop ~/.config/autostart/
 sed -i 's/Exec=nitrogen/Exec=nitrogen --restore/g' ~/.config/autostart/nitrogen.desktop
 echo 'OnlyShowIn=XFCE;' | tee -a ~/.config/autostart/nitrogen.desktop
@@ -65,6 +61,16 @@ bgcolor=#000000" > ~/.config/nitrogen/bg-saved.cfg
 #mkdir -pv ~/.config/autostart
 #cp -rfv /usr/share/applications/compiz-start.desktop ~/.config/autostart/
 #sed -i 's/compiz ccp --replace/sh -c \"sleep 3;compiz ccp --replace\"/g' .config/autostart/compiz-start.desktop
+```
+### Compton
+```bash
+git clone https://github.com/tryone144/compton;cd compton
+sudo apt install -y libx11-dev libxcomposite-dev libxdamage-dev libxrender-dev libxrandr-dev libxinerama-dev libconfig-dev libdbus-1-dev libdrm-dev libgl1-mesa-dev libpcre3-dev
+make;sudo make install
+sudo apt autoremove --purge -y libpthread-stubs0-dev libx11-dev libx11-doc libxau-dev libxcb1-dev libxdmcp-dev x11proto-core-dev x11proto-dev xorg-sgml-doctools xtrans-dev libxcomposite-dev libxext-dev libxfixes-dev x11proto-composite-dev x11proto-fixes-dev x11proto-xext-dev libxdamage-dev x11proto-damage-dev libxrender-dev libxrandr-dev x11proto-randr-dev libxinerama-dev x11proto-xinerama-dev libconfig-dev libconfig-doc libdbus-1-dev libdrm-dev libgl1-mesa-dev libgles1 libglvnd-core-dev libglvnd-dev libopengl0 libx11-xcb-dev libxcb-dri2-0-dev libxcb-dri3-dev libxcb-glx0-dev libxcb-present-dev libxcb-randr0-dev libxcb-render0-dev libxcb-shape0-dev libxcb-sync-dev libxcb-xfixes0-dev libxshmfence-dev libxxf86vm-dev mesa-common-dev x11proto-xf86vidmode-dev libpcre16-3 libpcre3-dev libpcre32-3 libpcrecpp0v5 asciidoc asciidoc-base asciidoc-common libxml2-utils xsltproc
+cp /usr/share/applications/compton.desktop ~/.config/autostart/
+echo 'OnlyShowIn=XFCE;' | tee -a ~/.config/autostart/compton.desktop
+sed -i 's/TryExec/#TryExec/g' ~/.config/autostart/compton.desktop
 ```
 ### Conky
 ```bash
