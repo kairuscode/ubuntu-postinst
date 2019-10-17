@@ -47,7 +47,7 @@
       </property>
       <property name="XF86WebCam" type="string" value="obs"/>
       <property name="&lt;Alt&gt;Escape" type="string" value="rofi -show window -show-icons"/>
-      <property name="&lt;Super&gt;x" type="string" value="rofi -show drun -show-icons"/>
+      <property name="&lt;Super&gt;a" type="string" value="rofi -show drun -show-icons"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
