@@ -147,7 +147,7 @@ echo DPkg::Post-Invoke \{\"find /usr/share/icons/Papirus* -type f -name ladi* -e
 ```
  - ### REAPER
 ```bash
-wget -c https://www.reaper.fm/files/5.x/reaper5983_linux_x86_64.tar.xz #update_link
+wget -c https://www.reaper.fm/files/5.x/reaper5984_linux_x86_64.tar.xz #update_link
 tar -Jxf reaper*.tar.xz;cd reaper_linux*
 sudo ./install-reaper.sh --install /opt --quiet --integrate-desktop --usr-local-bin-symlink;cd ..
 sudo wget -O /opt/REAPER/Plugins/reaper_sws64.so http://www.sws-extension.org/download/pre-release/linux-2.10.0.0/reaper_sws64.so
