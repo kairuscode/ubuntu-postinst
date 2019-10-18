@@ -5,8 +5,8 @@ sudo add-apt-repository -y ppa:xuzhen666/dockbarx
 ```
 ### Aparência e usabilidade
 ```bash
-sudo apt install -y gtk3-nocsd menulibre mugshot nitrogen redshift-gtk rofi xfce4-appmenu-plugin xfce4-dockbarx-plugin xfce4-notifyd xfce4-panel xfce4-power-manager xfce4-session xfce4-settings xfce4-whiskermenu-plugin xfpanel-switch xfwm4 xscreensaver xserver-xorg-input-synaptics-hwe-18.04
-sudo apt autoremove --purge -y dockbarx-applet* indicator* thunar* xubuntu*
+sudo apt install -y gtk3-nocsd menulibre mugshot redshift-gtk rofi thunar xfce4-appmenu-plugin xfce4-dockbarx-plugin xfce4-notifyd xfce4-panel xfce4-power-manager xfce4-session xfce4-settings xfce4-whiskermenu-plugin xfdesktop xfpanel-switch xfwm4 xscreensaver xserver-xorg-input-synaptics-hwe-18.04
+sudo apt autoremove --purge -y dockbarx-applet* indicator* xubuntu*
 sudo rm -rfv /usr/share/xfpanel-switch/layouts/*
 git clone https://github.com/rauldipeas/ubuntu-postinst
 gconftool --load ubuntu-postinst/flavours-lab/XFCE/dockbarx.xml
@@ -18,28 +18,7 @@ cp -rfv ubuntu-postinst/flavours-lab/XFCE/xfce4 ~/.config/
 cp -rfv ubuntu-postinst/flavours-lab/XFCE/xfpanel-switch ~/.local/share/
 mkdir -pv ~/Imagens/Wallpapers/
 cp -rfv ubuntu-postinst/flavours-lab/XFCE/wallpapers/* ~/Imagens/Wallpapers/
-#cp -rfv ubuntu-postinst/flavours-lab/XFCE/compiz ~/.config/
-mkdir -pv ~/.config/autostart
-cp /usr/share/applications/nitrogen.desktop ~/.config/autostart/
-sed -i 's/Exec=nitrogen/Exec=nitrogen --restore/g' ~/.config/autostart/nitrogen.desktop
-echo 'OnlyShowIn=XFCE;' | tee -a ~/.config/autostart/nitrogen.desktop
-mkdir -pv ~/.config/nitrogen
-echo "[geometry]
-posx=-1
-posy=-1
-sizex=450
-sizey=500
-
-[nitrogen]
-view=icon
-recurse=true
-sort=alpha
-icon_caps=false
-dirs=$HOME/Imagens/Wallpapers;" > ~/.config/nitrogen/nitrogen.cfg
-echo "[xin_-1]
-file=$HOME/Imagens/Wallpapers/29d9e93e8012110e2b0d50c6b39f732d.jpg
-mode=4
-bgcolor=#000000" > ~/.config/nitrogen/bg-saved.cfg
+echo 'DPkg::Post-Invoke {"rm -rfv /usr/share/applications/*thunar* /usr/share/applications/*Thunar*";};' | sudo tee /etc/apt/apt.conf.d/100thunar
 ```
 ### Compiz Reloaded
 ```bash
