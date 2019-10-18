@@ -176,6 +176,11 @@ sudo apt install -y ./stremio*.deb
 wget -c https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
 sudo apt install -y teamviewer*.deb
 ```
+### TimeShif
+```bash
+sudo add-apt-repository -y ppa:teejee2008/ppa
+sudo apt install -y timeshift
+```
 ### VirtualBox
 ```bash
 wget -c https://download.virtualbox.org/virtualbox/6.0.12/virtualbox-6.0_6.0.12-133076~Ubuntu~bionic_amd64.deb
@@ -195,7 +200,7 @@ sudo add-apt-repository -y ppa:mkusb/ppa # MKUSB
 sudo apt install -y --no-install-recommends gnome-mpv kpat mkusb sweeper
 gsettings set io.github.celluloid-player.Celluloid mpv-options --save-position-on-quit
 echo 'StartupWMClass=kpat' | sudo tee -a /usr/share/applications/org.kde.kpat.desktop
-sudo apt install -y audacity caffeine deja-dup deluge-gtk deluge-web deluged galculator galternatives gnome-alsamixer gnome-sushi gnome-usage hardinfo nautilus-dropbox neofetch openssh-server p7zip-full shotwell synaptic tilix unrar vinagre x11vnc #telegram
+sudo apt install -y audacity caffeine deluge-gtk deluge-web deluged galculator galternatives gnome-alsamixer gnome-sushi gnome-usage hardinfo nautilus-dropbox neofetch openssh-server p7zip-full shotwell synaptic tilix unrar vinagre x11vnc #telegram
 sudo apt autoremove --purge -y eog gnome-terminal
 sudo rm -rfv /usr/share/applications/caffeine.desktop /usr/share/applications/debian-*xterm.desktop /usr/share/applications/guidus.desktop
 sudo sed -i 's/Icon=\/usr\/share\/pixmaps\/gnome-alsamixer\/gnome-alsamixer-icon.png/Icon=gnome-alsamixer-icon/g' /usr/share/applications/gnome-alsamixer.desktop
