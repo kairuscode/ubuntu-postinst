@@ -183,8 +183,9 @@ sudo apt install -y timeshift
 ```
 ### VirtualBox
 ```bash
-wget -c https://download.virtualbox.org/virtualbox/6.0.12/virtualbox-6.0_6.0.12-133076~Ubuntu~bionic_amd64.deb
-sudo apt install -y --no-install-recommends ./virtualbox*.deb
+echo 'deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian <mydist> contrib' | sudo tee /etc/apt/sources.list.d/virtualbox.list
+wget -qO- https://www.virtualbox.org/download/oracle_vbox_2016.asc | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/virtualbox.gpg
+sudo apt update;sudo apt install -y --no-install-recommends virtualbox-6.0
 ```
 ### Webpin
 ```bash
