@@ -96,7 +96,7 @@ sudo apt install -y ./oblogout_0.2-0-0ubuntu1_all.deb ./python-central_0.6.17_al
 git clone https://github.com/bruhensant/Adeos-Oblogout
 sudo cp -rfv Adeos-Oblogout/adeos-cores /usr/share/themes/
 sudo cp -rfv oblogout.mo /usr/share/locale/pt_BR/LC_MESSAGES/oblogout.mo
-sudo sed -i 's/openbox --exit/\/usr\/bin\/xfce4-session-logout -l -f/g' /usr/share/pyshared/oblogout/__init__.py 
+sudo sed -i 's/openbox --exit/\/usr\/bin\/xfce4-session-logout -l -f/g' /usr/share/pyshared/oblogout/__init__.py
 echo '#!/bin/bash
 oblogout' | sudo tee /usr/local/bin/xfce4-session-logout;sudo chmod +x -v /usr/local/bin/xfce4-session-logout
 echo '[settings]
@@ -117,7 +117,7 @@ logout = L
 [commands]
 shutdown = shutdown -h now
 restart = reboot
-logout = killall -9 xfce4-session' | sudo tee /etc/oblogout.conf
+logout = /usr/bin/xfce4-session-logout -l -f' | sudo tee /etc/oblogout.conf
 ```
 ### Palm detection
 ```bash
