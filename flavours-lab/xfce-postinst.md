@@ -86,6 +86,37 @@ Terminal=false
 Hidden=false
 Icon=mouse' > ~/.config/autostart/naturalscrolling.desktop
 ```
+### OBLogout
+```bash
+wget -c https://github.com/rauldipeas/ubuntu-postinst/raw/master/resources/oblogout.mo
+wget -c https://github.com/rauldipeas/ubuntu-postinst/raw/master/resources/oblogout_0.2-0-0ubuntu1_all.deb
+wget -c https://github.com/rauldipeas/ubuntu-postinst/raw/master/resources/python-central_0.6.17_all.deb
+wget -c https://github.com/rauldipeas/ubuntu-postinst/raw/master/resources/python-imaging_3.1.2-0ubuntu1_all.deb
+git clone https://github.com/bruhensant/Adeos-Oblogout
+sudo cp -rfv Adeos-Oblogout/adeos-cores /usr/share/themes/
+sudo cp -rfv oblogout.mo /usr/share/locale/pt_BR/LC_MESSAGES/oblogout.mo
+echo '#!/bin/bash
+oblogout' | sudo tee /usr/local/bin/xfce4-session-logout;sudo chmod +x -v /usr/local/bin/xfce4-session-logout
+echo '[settings]
+usehal = false
+
+[looks]
+opacity = 70
+bgcolor = black
+buttontheme = adeos-cores
+buttons = cancel, logout, restart, shutdown
+
+[shortcuts]
+cancel = Escape
+shutdown = S
+restart = R
+logout = L
+
+[commands]
+shutdown = shutdown -h now
+restart = reboot
+logout = killall -9 xfce4-session' | sudo tee /etc/oblogout.conf
+```
 ### Palm detection
 ```bash
 echo '#!/bin/bash
