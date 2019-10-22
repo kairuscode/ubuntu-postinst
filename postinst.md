@@ -53,7 +53,9 @@ kernel.pid_max=4194304
 kern.timecounter.alloweddeviation=0
 hw.usb.uaudio.buffer_ms=2
 hw.snd.latency=0
-dev.pcm.0.bitperfect=1' | sudo tee /etc/sysctl.d/rauldipeas.conf
+dev.pcm.0.bitperfect=1
+net.core.default_qdisc=fq
+net.ipv4.tcp_congestion_control=bbr' | sudo tee /etc/sysctl.d/rauldipeas.conf
 #sudo sed -i 's/; realtime/realtime/g' /etc/pulse/daemon.conf
 systemctl --user mask evolution-addressbook-factory.service evolution-calendar-factory.service evolution-source-registry.service
 ```
