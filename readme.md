@@ -24,7 +24,7 @@ Primeiro eu executo os comandos indicados no arquivo [**postinst.md**](https://g
 ![bug](https://github.com/rauldipeas/ubuntu-postinst/raw/master/icons/tools-report-bug.svg?sanitize=true)
  **Problemas não solucionados:**
  - [x] <span style="color:green">~~Não consegui ativar o _**Vulkan**_ e consequentemente não consigo rodar jogos com o _**DXVK**_, mesmo usando o _**PPA de drivers**_, não funcionou.~~</span> [**#vulkan-fix**](https://github.com/rauldipeas/ubuntu-postinst/blob/master/postinst.md#driver-nvidia-vulkan-fix)
- - [x] <span style="color:green">~~Não sei como setar o tema _**Materia-dark-compact**_ para o _shell_ do _**GDM**_.~~</span> [**#gdm-theme-fix**](https://github.com/rauldipeas/ubuntu-postinst/blob/master/extras.md#gdm-theme-fix)
+ - [x] <span style="color:green">~~Não sei como setar o tema _**Materia-dark-compact**_ para o _shell_ do _**GDM**_.~~</span> [**#fix-gdm-theme**](https://github.com/rauldipeas/ubuntu-postinst/blob/master/extras.md#gdm-theme-fix)
  - [x] <span style="color:green">~~Não sei como importar automaticamente as configurações do _**Dash-to-panel**_.~~</span> [**#import-fix**](https://github.com/rauldipeas/ubuntu-postinst/blob/master/extras.md#temas-import-fix)
  - [x] <span style="color:green">~~Não encontrei uma _extensão_ do _**GNOME**_ que me permita fazer um ajuste fino nos ícones da _área de notificação_, gostaria de _diminuir o tamanho_ e o _espaçamento_ dos ícones, testei algumas, mas nenhuma funcionou.~~</span> [**#tray-fix**](https://github.com/rauldipeas/ubuntu-postinst/blob/master/postinst.md#gnome-shell-extensions-tray-fix)
  - [ ] Acontece um _atraso/travamento_ quando eu uso o comando `xdotool key` nos _gestos_ do mouse.
