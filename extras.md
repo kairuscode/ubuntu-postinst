@@ -50,8 +50,19 @@ dconf load /org/gnome/shell/extensions/dash-to-panel/ < dash-to-panel.cfg
 git clone https://github.com/vinceliuice/grub2-themes
 cd grub2-themes;sudo ./install.sh -l;cd ..
 ```
-### GDM
+### GDM #fix-gdm-theme
 ```bash
+echo '#!/bin/bash' | sudo tee /usr/local/bin/materia-gdm
+echo "sudo apt install -y libglib2.0-dev libxml2-utils
+GTK_THEME=\$(gsettings get org.gnome.desktop.interface gtk-theme | sed \"s/'//g\")
+cd /usr/share/themes/\${GTK_THEME}/gnome-shell
+sudo glib-compile-resources --target=/usr/share/gnome-shell/gnome-shell-theme.gresource gnome-shell-theme.gresource.xml
+sudo cp -av gnome-shell.css /usr/share/gnome-shell/theme/ubuntu.css
+sudo apt autoremove --purge -y libglib2.0-dev libglib2.0-dev-bin libpcre16-3 libpcre3-dev libpcre32-3 libpcrecpp0v5 libxml2-utils;cd" | sudo tee -a /usr/local/bin/materia-gdm;sudo chmod +x -v /usr/local/bin/materia-gdm
+materia-gdm
+echo DPkg::Post-Invoke \{\"materia-gdm\"\;\}\; | sudo tee /etc/apt/apt.conf.d/100materia-gdm
+sudo sed -i 's/303030/000000/g' /usr/share/gnome-shell/theme/ubuntu.css
+echo DPkg::Post-Invoke \{\"sed -i \'s/303030/000000/g\' /usr/share/gnome-shell/theme/ubuntu.css\"\;\}\; | sudo tee /etc/apt/apt.conf.d/100gdm-dark
 sudo sed -i 's/Ubuntu/Quicksand/g' /usr/share/gnome-shell/theme/ubuntu.css
 echo DPkg::Post-Invoke \{\"sed -i \'s/Ubuntu/Quicksand/g\' /usr/share/gnome-shell/theme/ubuntu.css\"\;\}\; | sudo tee -a /etc/apt/apt.conf.d/100gdm-dark
 xhost +SI:localuser:gdm
