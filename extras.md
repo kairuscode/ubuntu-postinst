@@ -50,7 +50,7 @@ dconf load /org/gnome/shell/extensions/dash-to-panel/ < dash-to-panel.cfg
 git clone https://github.com/vinceliuice/grub2-themes
 cd grub2-themes;sudo ./install.sh -l;cd ..
 ```
-### GDM #fix-gdm-theme
+### GDM #gdm-theme-fix
 ```bash
 echo '#!/bin/bash' | sudo tee /usr/local/bin/materia-gdm
 echo "sudo apt install -y libglib2.0-dev libxml2-utils
@@ -224,7 +224,7 @@ sudo update-alternatives --set x-terminal-emulator /usr/bin/tilix.wrapper
 sudo wget -cO /usr/local/bin/neofetch https://raw.githubusercontent.com/dylanaraps/neofetch/master/neofetch
 sudo chmod +x -v /usr/local/bin/neofetch
 ```
-### Gestures
+### Gestures #xdotool-key-fix
 ```bash
 sudo gpasswd -a $USER input
 sudo apt install -y libinput-tools python3-setuptools wmctrl xdotool
@@ -234,6 +234,7 @@ git clone https://gitlab.com/cunidev/gestures
 cd gestures;sudo python3 setup.py install;cd ..
 sudo sed -i 's/org.cunidev.gestures/libinput-gestures/g' /usr/share/applications/org.cunidev.gestures.desktop
 sudo mv -v /usr/share/applications/libinput-gestures.desktop /etc/xdg/autostart/
+sudo sed -i 's/modifier_map Mod3/\/\/ modifier_map Mod3/g' /usr/share/X11/xkb/symbols/br
 ```
 ### Flatpak
 ```bash
