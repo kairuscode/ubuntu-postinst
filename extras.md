@@ -57,7 +57,7 @@ echo '#!/bin/bash' | sudo tee /usr/local/bin/materia-gdm
 echo "GTK_THEME=\$(gsettings get org.gnome.desktop.interface gtk-theme | sed \"s/'//g\")
 cd /usr/share/themes/\${GTK_THEME}/gnome-shell
 sudo glib-compile-resources --target=/usr/share/gnome-shell/gnome-shell-theme.gresource gnome-shell-theme.gresource.xml
-sudo cp -av gnome-shell.css /usr/share/gnome-shell/theme/ubuntu.css;cd" | sudo tee -a /usr/local/bin/materia-gdm;sudo chmod +x -v /usr/local/bin/materia-gdm
+sudo cp -a gnome-shell.css /usr/share/gnome-shell/theme/ubuntu.css;cd" | sudo tee -a /usr/local/bin/materia-gdm;sudo chmod +x -v /usr/local/bin/materia-gdm
 materia-gdm
 echo DPkg::Post-Invoke \{\"materia-gdm\"\;\}\; | sudo tee /etc/apt/apt.conf.d/100materia-gdm
 sudo sed -i 's/303030/000000/g' /usr/share/gnome-shell/theme/ubuntu.css
