@@ -475,7 +475,7 @@
     <entry>
       <key>theme</key>
       <value>
-        <string>DockXYZ</string>
+        <string>Windows 10</string>
       </value>
     </entry>
     <entry>
@@ -1608,6 +1608,66 @@
       <key>themes/Sunny_Colors/popup_style_file</key>
       <value>
         <string>Radiance.tar.gz</string>
+      </value>
+    </entry>
+    <entry>
+      <key>themes/Windows_10/color1</key>
+      <value>
+        <string>#333333</string>
+      </value>
+    </entry>
+    <entry>
+      <key>themes/Windows_10/color1_alpha</key>
+      <value>
+        <int>170</int>
+      </value>
+    </entry>
+    <entry>
+      <key>themes/Windows_10/color2</key>
+      <value>
+        <string>#FFFFFF</string>
+      </value>
+    </entry>
+    <entry>
+      <key>themes/Windows_10/color3</key>
+      <value>
+        <string>#FFFF75</string>
+      </value>
+    </entry>
+    <entry>
+      <key>themes/Windows_10/color4</key>
+      <value>
+        <string>#9C9C9C</string>
+      </value>
+    </entry>
+    <entry>
+      <key>themes/Windows_10/color5</key>
+      <value>
+        <string>#000000</string>
+      </value>
+    </entry>
+    <entry>
+      <key>themes/Windows_10/color6</key>
+      <value>
+        <string>#000000</string>
+      </value>
+    </entry>
+    <entry>
+      <key>themes/Windows_10/color7</key>
+      <value>
+        <string>#000000</string>
+      </value>
+    </entry>
+    <entry>
+      <key>themes/Windows_10/color8</key>
+      <value>
+        <string>#000000</string>
+      </value>
+    </entry>
+    <entry>
+      <key>themes/Windows_10/popup_style_file</key>
+      <value>
+        <string>DMD_Glass.tar.gz</string>
       </value>
     </entry>
   </entrylist>

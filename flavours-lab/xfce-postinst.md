@@ -9,6 +9,7 @@ sudo apt install -y gtk3-nocsd menulibre mugshot redshift-gtk rofi thunar xfce4-
 sudo apt autoremove --purge -y dockbarx-applet* indicator* xubuntu*
 sudo rm -rfv /usr/share/xfpanel-switch/layouts/*
 git clone https://github.com/rauldipeas/ubuntu-postinst
+git clone https://github.com/Xseba360/DockBarX-Windows10.git;cd DockBarX-Windows10;sudo ./install.sh
 gconftool --load ubuntu-postinst/flavours-lab/XFCE/dockbarx.xml
 mkdir -pv ~/.config ~/.local/share
 cp -rfv ubuntu-postinst/flavours-lab/XFCE/compton.conf ~/.config/
