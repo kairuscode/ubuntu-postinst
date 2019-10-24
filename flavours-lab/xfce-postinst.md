@@ -2,6 +2,7 @@
 ```bash
 sudo add-apt-repository -y ppa:unit193/xfce
 sudo add-apt-repository -y ppa:xuzhen666/dockbarx
+sudo add-apt-repository -y ppa:jasonpleau/rofi
 ```
 ### Aparência e usabilidade
 ```bash
