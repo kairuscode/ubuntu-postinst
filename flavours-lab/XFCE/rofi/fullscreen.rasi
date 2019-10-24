@@ -1,19 +1,37 @@
 * {
 	background-color: black;
-	text-color:       white;
-	spacing:          30;
-}
-window {
-	font: "Quicksand 20";
-	fullscreen: true;
-	children: [ dummy1, hdum, dummy2 ];
+	text-color: white;
 }
 
-hdum {
-	orientation: horizontal;
-	children: [ dummy3, mainbox, dummy4 ];
+window {
+	fullscreen: true;
+	font: "Quicksand 20";
+}
+
+prompt {enabled: false;}
+
+entry  {
+	width: 30em;
+	margin: 120px 80px 10px 480px;
+}
+
+listview {
+	columns: 4;
+	margin: 80px 240px 80px 240px;
+}
+
+element {
+	padding: 30px;
+	margin: 30px;
+
 }
 
 element selected {
-	text-color: #00aaff;
+	text-color: #fff;
+	background-color: #0055ff;
+}
+
+element-icon {
+    size:                           64;
+    border:                         0px;
 }
