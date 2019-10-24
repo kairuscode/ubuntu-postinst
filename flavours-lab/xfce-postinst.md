@@ -162,7 +162,7 @@ sudo apt install -y ./xfce4-windowck-plugin*.deb
 sudo apt install -y xcape
 mkdir -p ~/.config/autostart
 echo "[Desktop Entry]
-Exec=sh -c \"xcape -e 'Super_L=Super_L|Escape';xcape -e '#108=Super_L|Alt_L|Escape'\"
+Exec=sh -c \"xcape -e 'Super_L=Super_L|a';xcape -e '#108=Super_L|Alt_L|Escape'\"
 Name=Xcape
 Type=Application
 OnlyShowIn=XFCE;" > ~/.config/autostart/xcape.desktop
