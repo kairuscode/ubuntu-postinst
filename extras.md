@@ -61,9 +61,9 @@ sudo cp -a gnome-shell.css /usr/share/gnome-shell/theme/ubuntu.css;cd" | sudo te
 materia-gdm
 echo DPkg::Post-Invoke \{\"materia-gdm\"\;\}\; | sudo tee /etc/apt/apt.conf.d/100materia-gdm
 sudo sed -i 's/303030/000000/g' /usr/share/gnome-shell/theme/ubuntu.css
-echo DPkg::Post-Invoke \{\"sed -i \'s/303030/000000/g\' /usr/share/gnome-shell/theme/ubuntu.css\"\;\}\; | sudo tee /etc/apt/apt.conf.d/100gdm-dark
+echo DPkg::Post-Invoke \{\"sed -i \'s/303030/000000/g\' /usr/share/gnome-shell/theme/ubuntu.css\"\;\}\; | sudo tee /etc/apt/apt.conf.d/101gdm-dark
 sudo sed -i 's/Ubuntu/Quicksand/g' /usr/share/gnome-shell/theme/ubuntu.css
-echo DPkg::Post-Invoke \{\"sed -i \'s/Ubuntu/Quicksand/g\' /usr/share/gnome-shell/theme/ubuntu.css\"\;\}\; | sudo tee -a /etc/apt/apt.conf.d/100gdm-dark
+echo DPkg::Post-Invoke \{\"sed -i \'s/Ubuntu/Quicksand/g\' /usr/share/gnome-shell/theme/ubuntu.css\"\;\}\; | sudo tee -a /etc/apt/apt.conf.d/101gdm-dark
 xhost +SI:localuser:gdm
 sudo su gdm -s /bin/bash #executar comandos abaixo como usuário GDM
 $# gsettings set org.gnome.desktop.interface gtk-theme Materia-dark-compact
