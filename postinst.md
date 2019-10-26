@@ -39,23 +39,26 @@ msgqueue unlimited
 locks unlimited
 * hard nofile 1048576
 @audio   -  nice      -19' | sudo tee /etc/security/limits.d/rauldipeas.conf
-echo 'vm.swappiness=10
-net.ipv4.tcp_syncookies=1
-net.ipv4.ip_forward=1
-net.ipv4.tcp_dsack=0
-#net.ipv4.tcp_sack=0
+echo 'dev.pcm.0.bitperfect=1
 fs.file-max=100000
-kernel.sched_migration_cost_ns=5000000
-kernel.sched_autogroup_enabled=0
-vm.dirty_background_bytes=16777216
-vm.dirty_bytes=50331648
-kernel.pid_max=4194304
-kern.timecounter.alloweddeviation=0
 hw.usb.uaudio.buffer_ms=2
 hw.snd.latency=0
-dev.pcm.0.bitperfect=1
+kern.timecounter.alloweddeviation=0
+kernel.panic = 60
+kernel.pid_max=4194304
+kernel.sched_autogroup_enabled=0
+kernel.sched_migration_cost_ns=5000000
 net.core.default_qdisc=fq
-net.ipv4.tcp_congestion_control=bbr' | sudo tee /etc/sysctl.d/rauldipeas.conf
+net.ipv4.ip_forward=1
+net.ipv4.tcp_congestion_control=bbr
+net.ipv4.tcp_dsack=0
+#net.ipv4.tcp_sack=0
+net.ipv4.tcp_syncookies=1
+vm.dirty_background_bytes=16777216
+vm.dirty_background_ratio = 2
+vm.dirty_bytes=50331648
+vm.dirty_ratio = 60
+vm.swappiness=10' | sudo tee /etc/sysctl.d/rauldipeas.conf
 #sudo sed -i 's/; realtime/realtime/g' /etc/pulse/daemon.conf
 systemctl --user mask evolution-addressbook-factory.service evolution-calendar-factory.service evolution-source-registry.service
 ```
