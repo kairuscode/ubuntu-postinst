@@ -15,6 +15,7 @@ gconftool --load ubuntu-postinst/flavours-lab/XFCE/dockbarx.xml
 mkdir -pv ~/.config ~/.local/share
 cp -rfv ubuntu-postinst/flavours-lab/XFCE/compton.conf ~/.config/
 cp -rfv ubuntu-postinst/flavours-lab/XFCE/rofi ~/.config/
+cp -rfv ubuntu-postinst/flavours-lab/XFCE/skippy-xd ~/.config/
 cp -rfv ubuntu-postinst/flavours-lab/XFCE/volumeicon ~/.config/
 cp -rfv ubuntu-postinst/flavours-lab/XFCE/xfce4 ~/.config/
 cp -rfv ubuntu-postinst/flavours-lab/XFCE/xfpanel-switch ~/.local/share/
@@ -140,6 +141,14 @@ StartupNotify=false
 Terminal=false
 Hidden=false
 Icon=mouse' > ~/.config/autostart/palmdetection.desktop
+```
+### Skippy-XD
+```bash
+wget -c https://github.com/rauldipeas/ubuntu-postinst/raw/master/resources/skippy-xd_0.5.2~pre-ubuntu18.04.1_amd64.deb
+wget -c https://github.com/rauldipeas/ubuntu-postinst/raw/master/resources/libpng12-0_1.2.54-1ubuntu1.1_amd64.deb
+sudo apt install -y ./skippy*.deb ./libpng12-0*.deb
+sudo wget -c -O /usr/local/bin/skippy-xd-fix https://github.com/rauldipeas/ubuntu-postinst/raw/master/resources/skippy-xd-fix
+sudo chmod +x -v /usr/local/bin/skippy-xd-fix
 ```
 ### Volume icon
 ```bash
