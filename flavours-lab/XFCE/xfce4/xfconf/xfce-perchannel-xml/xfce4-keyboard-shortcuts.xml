@@ -45,10 +45,10 @@
         <property name="startup-notify" type="bool" value="true"/>
       </property>
       <property name="XF86WebCam" type="string" value="obs"/>
-      <property name="&lt;Alt&gt;Escape" type="string" value="rofi -show window -show-icons"/>
-      <property name="&lt;Super&gt;a" type="string" value="rofi -show drun -show-icons"/>
       <property name="&lt;Primary&gt;Escape" type="string" value="xfce4-popup-whiskermenu"/>
       <property name="&lt;Super&gt;w" type="string" value="skippy-xd-fix"/>
+      <property name="&lt;Super&gt;a" type="string" value="rofi -show drun"/>
+      <property name="&lt;Alt&gt;Escape" type="string" value="rofi -show window"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
