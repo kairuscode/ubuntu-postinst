@@ -2,11 +2,10 @@
 ```bash
 sudo add-apt-repository -y ppa:unit193/xfce
 sudo add-apt-repository -y ppa:xuzhen666/dockbarx
-sudo add-apt-repository -y ppa:jasonpleau/rofi
 ```
 ### Aparência e usabilidade
 ```bash
-sudo apt install -y gtk3-nocsd menulibre mugshot redshift-gtk rofi thunar xfce4-appmenu-plugin xfce4-dockbarx-plugin xfce4-notifyd xfce4-panel xfce4-power-manager xfce4-session xfce4-settings xfce4-whiskermenu-plugin xfdesktop xfpanel-switch xfwm4 xscreensaver xserver-xorg-input-synaptics-hwe-18.04
+sudo apt install -y gtk3-nocsd menulibre mugshot redshift-gtk thunar xfce4-appmenu-plugin xfce4-dockbarx-plugin xfce4-notifyd xfce4-panel xfce4-power-manager xfce4-session xfce4-settings xfce4-whiskermenu-plugin xfdesktop xfpanel-switch xfwm4 xscreensaver xserver-xorg-input-synaptics-hwe-18.04
 sudo apt autoremove --purge -y dockbarx-applet* indicator* xubuntu*
 sudo rm -rfv /usr/share/xfpanel-switch/layouts/*
 git clone https://github.com/rauldipeas/ubuntu-postinst
@@ -141,6 +140,17 @@ StartupNotify=false
 Terminal=false
 Hidden=false
 Icon=mouse' > ~/.config/autostart/palmdetection.desktop
+```
+### Rofi
+```bash
+git clone https://github.com/davatorium/rofi;cd rofi
+sudo apt install -y autoconf automake autopoint bison debhelper dh-autoreconf dh-strip-nondeterminism flex gir1.2-harfbuzz-0.0 icu-devtools libbison-dev libcairo-script-interpreter2 libcairo2-dev libfile-stripnondeterminism-perl libgdk-pixbuf2.0-dev libgraphite2-dev libharfbuzz-dev libharfbuzz-gobject0 libice-dev libicu-dev libicu-le-hb-dev libicu-le-hb0 libiculx60 libpango1.0-dev libpixman-1-dev libpthread-stubs0-dev librsvg2-dev libsm-dev libstartup-notification0-dev libx11-dev libxau-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-randr0-dev libxcb-render0-dev libxcb-shm0-dev libxcb-util-dev libxcb-util0-dev libxcb-xinerama0-dev libxcb-xkb-dev libxcb-xrm-dev libxcb1-dev libxdmcp-dev libxext-dev libxft-dev libxkbcommon-dev libxkbcommon-x11-dev libxrender-dev m4 po-debconf texinfo x11proto-core-dev x11proto-dev x11proto-xext-dev xorg-sgml-doctools xtrans-dev
+git clone https://github.com/libcheck/check;cd check
+autoreconf -i;./configure;make;sudo make install; cd ..
+git submodule update --init;autoreconf -i
+./configure;make;sudo make install
+sudo apt autoremove --purge autoconf automake autopoint bison debhelper dh-autoreconf dh-strip-nondeterminism flex gir1.2-harfbuzz-0.0 icu-devtools libbison-dev libcairo-script-interpreter2 libcairo2-dev libfile-stripnondeterminism-perl libgdk-pixbuf2.0-dev libgraphite2-dev libharfbuzz-dev libharfbuzz-gobject0 libice-dev libicu-dev libicu-le-hb-dev libicu-le-hb0 libiculx60 libpango1.0-dev libpixman-1-dev libpthread-stubs0-dev librsvg2-dev libsm-dev libstartup-notification0-dev libx11-dev libxau-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-randr0-dev libxcb-render0-dev libxcb-shm0-dev libxcb-util-dev libxcb-util0-dev libxcb-xinerama0-dev libxcb-xkb-dev libxcb-xrm-dev libxcb1-dev libxdmcp-dev libxext-dev libxft-dev libxkbcommon-dev libxkbcommon-x11-dev libxrender-dev m4 po-debconf x11proto-core-dev x11proto-dev x11proto-xext-dev xorg-sgml-doctools xtrans-dev libtext-unidecode-perl tex-common texinfo
+sudo apt install -y libxcb-ewmh2 libxcb-xrm0
 ```
 ### Skippy-XD
 ```bash

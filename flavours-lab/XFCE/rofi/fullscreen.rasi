@@ -1,7 +1,8 @@
 configuration {
-    show-icons: true;
-    icon-theme: "Papirus-Dark";
+	show-icons: true;
+	icon-theme: "Papirus-Dark";
 }
+
 * {
 	background-color: black;
 	text-color: white;
@@ -9,25 +10,25 @@ configuration {
 
 window {
 	fullscreen: true;
-	font: "Quicksand 20";
+	font: "Quicksand 16";
 }
 
-prompt {enabled: false;}
+prompt { enabled: false; }
 
 entry  {
 	width: 30em;
-	margin: 120px 80px 10px 480px;
+	margin: 8% 10% 3% 35%;
 }
 
 listview {
 	columns: 4;
-	margin: 80px 240px 80px 240px;
+	margin: 2% 15% 5% 15%;
 }
 
 element {
-	padding: 30px;
-	margin: 30px;
-
+	padding: 1%;
+	margin: 2%;
+	orientation: vertical;
 }
 
 element selected {
@@ -36,6 +37,9 @@ element selected {
 }
 
 element-icon {
-    size:                           64;
-    border:                         0px;
+	size: 96;
+}
+
+element-text {
+	horizontal-align: 0.5;
 }
