@@ -35,13 +35,13 @@ Primeiro eu executo os comandos indicados no arquivo [**postinst.md**](https://g
  [Desktop _**alternativo**_ com **XFCE**](https://github.com/rauldipeas/ubuntu-postinst/blob/master/flavours-lab/xfce-postinst.md)
 
 ![Superbar](https://github.com/rauldipeas/ubuntu-postinst/raw/master/icons/microsoft.svg?sanitize=true) _**Superbar**_
-![XFCE Superbar](https://github.com/rauldipeas/ubuntu-postinst/raw/master/flavours-lab/XFCE-Superbar.png)
+![XFCE Superbar](https://github.com/rauldipeas/ubuntu-postinst/raw/master/flavours-lab/Superbar.png)
 ![Cupertino](https://github.com/rauldipeas/ubuntu-postinst/raw/master/icons/folder-white-apple.svg?sanitize=true) _**Cupertino**_
-![XFCE Cupertino](https://github.com/rauldipeas/ubuntu-postinst/raw/master/flavours-lab/XFCE-Cupertino.png)
+![XFCE Cupertino](https://github.com/rauldipeas/ubuntu-postinst/raw/master/flavours-lab/Cupertino.png)
 ![Unity](https://github.com/rauldipeas/ubuntu-postinst/raw/master/icons/desktop-environment-unity.svg?sanitize=true) _**Half-Unity**_
-![XFCE Half-Unity](https://github.com/rauldipeas/ubuntu-postinst/raw/master/flavours-lab/XFCE-Half-Unity.png)
+![XFCE Half-Unity](https://github.com/rauldipeas/ubuntu-postinst/raw/master/flavours-lab/Half-Unity.png)
 ![SLBR](https://github.com/rauldipeas/ubuntu-postinst/raw/master/icons/kmix.svg?sanitize=true) _**SLBR**_
-![XFCE SLBR](https://github.com/rauldipeas/ubuntu-postinst/raw/master/flavours-lab/XFCE-SLBR.png)
+![XFCE SLBR](https://github.com/rauldipeas/ubuntu-postinst/raw/master/flavours-lab/SLBR.png)
 ![XFPanel Switcher](https://github.com/rauldipeas/ubuntu-postinst/raw/master/icons/preferences-desktop-theme.svg?sanitize=true) _**XFPanel Switch**_
 
 ![XFPanel Switch](https://github.com/rauldipeas/ubuntu-postinst/raw/master/flavours-lab/xfpanel-switch.gif)
@@ -52,4 +52,12 @@ Primeiro eu executo os comandos indicados no arquivo [**postinst.md**](https://g
 
 ![Rofi DRun](https://github.com/rauldipeas/ubuntu-postinst/raw/master/icons/view-media-playlist.svg?sanitize=true) _**Rofi DRun**_
 
-![Rofi DRun](https://github.com/rauldipeas/ubuntu-postinst/raw/master/flavours-lab/rofi-drun.png)
+![Rofi DRun](https://github.com/rauldipeas/ubuntu-postinst/raw/master/flavours-lab/Rofi-DRun.png)
+
+![Skippy-XD](https://github.com/rauldipeas/ubuntu-postinst/raw/master/icons/preferences-system-windows.svg?sanitize=true) _**Skippy-XD**_
+
+![Skippy-XD](https://github.com/rauldipeas/ubuntu-postinst/raw/master/flavours-lab/Skippy-XD.png)
+
+![OBLogout](https://github.com/rauldipeas/ubuntu-postinst/raw/master/icons/system-log-out.svg?sanitize=true) _**OBLogout**_
+
+![OBLogout](https://github.com/rauldipeas/ubuntu-postinst/raw/master/flavours-lab/OBLogout.png)
