@@ -22,7 +22,7 @@ mkdir -pv ~/Imagens/Wallpapers/
 cp -rfv ubuntu-postinst/flavours-lab/XFCE/wallpapers/* ~/Imagens/Wallpapers/
 echo 'DPkg::Post-Invoke {"rm -rfv /usr/share/applications/*thunar* /usr/share/applications/*Thunar*";};' | sudo tee /etc/apt/apt.conf.d/100thunar
 ```
-### Compiz Reloaded
+### Compiz Reloaded (removido)
 ```bash
 #wget -nv https://download.opensuse.org/repositories/home:stevenpusser:compiz-reloaded-rebuilds/Debian_Testing/Release.key -O Release.key
 #sudo apt-key add - < Release.key
