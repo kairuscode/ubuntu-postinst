@@ -209,13 +209,11 @@ sudo apt install -y ./libgranite* ./com.github.artemanufrij.webpin*.deb
 ```
 ### APT Apps
 ```bash
-sudo add-apt-repository -yn ppa:mc3man/bionic-media # Media codecs
-sudo add-apt-repository -yn ppa:xuzhen666/gnome-mpv # Celluloid
 sudo add-apt-repository -y ppa:mkusb/ppa # MKUSB
 #sudo add-apt-repository -y ppa:atareao/telegram
 sudo apt install -y --no-install-recommends gnome-mpv gthumb kpat mkusb sweeper
 gsettings set org.gnome.gthumb.general active-extensions "['contact_sheet', 'burn_disc', 'picasaweb', 'find_duplicates', 'resize_images', 'facebook', 'webalbums', 'catalogs', 'search', 'rename_series', 'selections', 'gstreamer_tools', 'edit_metadata', 'image_print', '23hq', 'bookmarks', 'slideshow', 'photo_importer', 'change_date', 'file_manager', 'raw_files', 'convert_format', 'exiv2_tools', 'list_tools', 'flicker', 'red_eye_removal', 'comments', 'image_rotation']"
-gsettings set io.github.celluloid-player.Celluloid mpv-options --save-position-on-quit
+gsettings set io.github.GnomeMpv mpv-options --save-position-on-quit
 echo 'StartupWMClass=kpat' | sudo tee -a /usr/share/applications/org.kde.kpat.desktop
 sudo apt install -y audacity caffeine deluge-gtk deluge-web deluged galculator galternatives gnome-alsamixer gnome-sushi gnome-usage hardinfo nautilus-dropbox neofetch openssh-server p7zip-full synaptic tilix unrar vinagre x11vnc #telegram
 sudo apt autoremove --purge -y eog gnome-terminal
