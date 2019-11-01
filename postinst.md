@@ -14,6 +14,10 @@ sudo apt install -y linux-headers-liquorix-amd64 linux-image-liquorix-amd64
 sudo apt autoremove --purge -y linux*generic*
 sudo apt install -y intel-microcode iucode-tool thermald
 ```
+### ZRAM
+```bash
+sudo apt install -y zram-config
+```
 ### Driver NVIDIA #vulkan-fix
 ```bash
 sudo apt autoremove --purge -yn *nvidia* *libnvidia*
