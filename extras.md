@@ -101,6 +101,11 @@ $# curl -L https://get.oh-my.fish | fish
 $# omf install bobthefish
 $# exit
 ```
+### 4KVideoDownloader
+```bash
+wget -c https://dl.4kdownload.com/app/4kvideodownloader_4.9.3-1_amd64.deb
+sudo apt install -y ./4kvideodownloader*.deb
+```
 ### AppImage Daemon
 ```bash
 wget -c https://github.com/AppImage/appimaged/releases/download/continuous/appimaged_1-alpha-git05c4438.travis209_amd64.deb #update_link
