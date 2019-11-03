@@ -246,7 +246,9 @@ flatpak install flathub org.gtk.Gtk3theme.Materia-dark-compact
 ```
 ### FeedReader
 ```bash
-flatpak install flathub org.gnome.FeedReader
+#flatpak install flathub org.gnome.FeedReader
+wget -c https://github.com/rauldipeas/ubuntu-postinst/raw/master/resources/feedreader_2.10.0-1_amd64.deb
+sudo apt install ./feedreader*.deb
 ```
 ### Remover Snaps
 ```bash
