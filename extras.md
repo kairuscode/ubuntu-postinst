@@ -191,7 +191,7 @@ sudo apt install -y ./stremio*.deb
 wget -c https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
 sudo apt install -y teamviewer*.deb
 ```
-### TimeShif
+### TimeShift
 ```bash
 sudo add-apt-repository -y ppa:teejee2008/ppa
 sudo apt install -y timeshift
