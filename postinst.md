@@ -222,6 +222,7 @@ unzip DaVinci_Resolve*.zip;./DaVinci_Resolve*Linux.run
 echo 'StartupWMClass=resolve' | sudo tee -a /usr/share/applications/com.blackmagicdesign.resolve.desktop
 echo 'Categories=AudioVideo;' | sudo tee -a /usr/share/applications/com.blackmagicdesign.resolve.desktop
 sudo rm -rfv /usr/share/applications/com.blackmagicdesign.resolve-*.desktop
+sudo ln -s /usr/lib/x86_64-linux-gnu/ /usr/lib64
 ```
 
 ### Gerenciadores de jogos
