@@ -74,6 +74,14 @@ $# gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click true
 $# exit
 xhost -SI:localuser:gdm
 ```
+### SAMBA
+```bash
+sudo apt install -y libnss-winbind samba winbind
+sudo chmod 1775 /var/lib/samba/usershares/
+sudo sed -i 's/\ dns/\ wins\ dns\ mdns4/g' /etc/nsswitch.conf
+sudo sed -i 's/\#\ \ \ wins\ support\ \=\ no/\ \ \ wins\ support\ \=\ yes/g' /etc/samba/smb.conf
+sudo sed -i 's/workgroup = WORKGROUP/workgroup = WORKGROUP\n   client max protocol = NT1/g' /etc/samba/smb.conf
+```
 ### Terminal
 ```bash
 sudo apt install -y curl fish undistract-me
