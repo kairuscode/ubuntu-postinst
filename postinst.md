@@ -29,7 +29,7 @@ echo '# POP!_OS PPA
 Package: *
 Pin: release o=LP-PPA-system76-pop
 Pin-Priority: 100' | sudo tee /etc/apt/preferences.d/pop_os;sudo apt update
-sudo apt install -y nvidia-driver-435 #lunarg-via lunarg-vkconfig lunarg-vktrace lunarg-vulkan-sdk
+sudo apt install -y nvidia-driver-440 #lunarg-via lunarg-vkconfig lunarg-vktrace lunarg-vulkan-sdk
 ```
 ### Otimizações de desempenho
 ```bash
