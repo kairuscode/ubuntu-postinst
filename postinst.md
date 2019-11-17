@@ -5,14 +5,13 @@ sudo apt update;sudo apt dist-upgrade -y
 sudo apt install -y deborphan
 deborphan | xargs sudo apt autoremove --purge -y
 ```
-### Liquorix
+### XanMod
 ```bash
-sudo add-apt-repository -y ppa:damentz/liquorix
-wget -c http://mirrors.kernel.org/ubuntu/pool/main/l/linux-firmware/linux-firmware_1.182_all.deb
-sudo apt install -y ./linux-firmware*.deb
-sudo apt install -y linux-headers-liquorix-amd64 linux-image-liquorix-amd64
+echo 'deb http://deb.xanmod.org releases main' | sudo tee /etc/apt/sources.list.d/xanmod-kernel.list
+wget -O- https://dl.xanmod.org/gpg.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/xanmod-kernel.list
+sudo apt update;sudo apt dist-upgrade -y
+sudo apt install -y linux-xanmod intel-microcode iucode-tool thermald
 sudo apt autoremove --purge -y linux*generic*
-sudo apt install -y intel-microcode iucode-tool thermald
 ```
 ### ZRAM
 ```bash
